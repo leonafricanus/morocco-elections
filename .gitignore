@@ -1,0 +1,5 @@
+# Arab Barometer raw files: download them from the Arab Barometer / ERF data portal (see toolkit/README.md)
+toolkit/AB*.csv
+toolkit/*.zip
+.ipynb_checkpoints/
+.DS_Store

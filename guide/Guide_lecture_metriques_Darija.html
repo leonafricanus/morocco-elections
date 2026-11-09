@@ -1,0 +1,603 @@
+<!doctype html><html lang="ar-MA" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دليل القراية ديال المؤشرات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=Noto+Naskh+Arabic:wght@500;600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFBF9;--surface:#FFFFFF;--ink:#1A1F24;--muted:#5E6670;--rule:#E1E3DE;--teal:#0F6E6E;--plum:#7A2E5A;--amber:#F2C14E;--code:#F3F4F0;--trap-bg:#FBEBC5;--trap-ink:#6B4500;--ex-bg:#E4F2F1;color-scheme:light;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121518;--surface:#181C20;--ink:#E8EAEC;--muted:#9AA3AD;--rule:#2C3238;--teal:#3FB0AA;--plum:#D07AAE;--code:#20262B;--trap-bg:#3A2E12;--trap-ink:#F2C14E;--ex-bg:#163533;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121518;--surface:#181C20;--ink:#E8EAEC;--muted:#9AA3AD;--rule:#2C3238;--teal:#3FB0AA;--plum:#D07AAE;--code:#20262B;--trap-bg:#3A2E12;--trap-ink:#F2C14E;--ex-bg:#163533;color-scheme:dark}
+*{box-sizing:inherit}
+html{scroll-padding-top:16px;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.85 "IBM Plex Sans Arabic","Public Sans",system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;font-variant-numeric:tabular-nums}
+.wrap{display:grid;grid-template-columns:300px minmax(0,1fr);max-width:1240px;margin:0 auto}
+nav.toc{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;padding:22px 18px 40px;border-inline-end:1px solid var(--rule)}
+nav.toc h2{margin:0 0 10px;border:0;padding:0}nav.toc h2 button{font:600 15px "IBM Plex Sans Arabic",sans-serif;color:var(--muted);background:none;border:0;padding:0;cursor:default}nav.toc h2 button span{display:none}
+nav.toc input{width:100%;font:15px "IBM Plex Sans Arabic",sans-serif;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;margin-bottom:12px}
+nav.toc ol{list-style:none;margin:0;padding:0}
+nav.toc li a{display:block;padding:5px 8px;border-radius:6px;color:var(--ink);text-decoration:none;font-size:14.5px;line-height:1.5}
+nav.toc li a:hover{background:var(--surface)}
+nav.toc li a b{display:inline-block;min-width:1.7em;color:var(--teal);font-weight:600}
+nav.toc li a small{display:block;color:var(--muted);font:12.5px "Public Sans",Arial,sans-serif;text-align:right;padding-inline-start:1.9em}
+nav.toc li.np a{font-weight:600;color:var(--muted);margin-top:12px;font-size:13.5px}
+nav.toc li a.on{background:var(--surface);box-shadow:inset -3px 0 0 var(--teal)}
+main{padding:36px 28px 90px;min-width:0}
+h1,h2,h3{font-family:"Noto Naskh Arabic","IBM Plex Sans Arabic",serif;font-weight:600;line-height:1.35;margin:0}
+h1{font-size:clamp(28px,4.4vw,42px);max-width:24ch}
+.lede p{color:var(--muted);max-width:68ch;margin:10px 0}
+main>h2{font-size:26px;margin:56px 0 18px;padding-top:22px;border-top:1px solid var(--rule)}
+section.item{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:20px 22px 8px;margin:0 0 22px}
+section.item>header{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px;cursor:pointer}
+section.item .no{flex:none;width:38px;height:38px;border-radius:50%;background:var(--teal);color:var(--bg);font:600 16px "Public Sans",Arial,sans-serif;display:flex;align-items:center;justify-content:center;margin-top:4px}
+section.item h3{font-size:23px}
+section.item .en{font:14.5px "Public Sans",Arial,sans-serif;color:var(--muted);margin:2px 0 0;text-align:right}
+.f{padding:10px 0;border-top:1px solid var(--rule)}
+.f h4{font:600 14px "IBM Plex Sans Arabic",sans-serif;color:var(--teal);margin:0 0 2px}
+.f p{margin:4px 0;max-width:72ch}
+.f ul{margin:4px 0;padding-inline-start:22px;max-width:72ch}
+.f li{margin:3px 0}
+.f-trap{background:var(--trap-bg);margin:8px -22px 0;padding:10px 22px;border-top:0}
+.f-trap h4{color:var(--trap-ink)}
+.f-trap+.f{border-top:0}
+.f-ex{background:var(--ex-bg);margin:8px -22px 0;padding:10px 22px;border-top:0}
+.f-ex+.f-trap{margin-top:0}
+.f-ask h4{color:var(--plum)}
+pre{background:var(--code);border-radius:8px;padding:12px 16px;margin:8px 0;font:15px/1.8 "IBM Plex Sans Arabic","Public Sans",sans-serif;white-space:pre-wrap;overflow-x:auto;direction:rtl;text-align:right}
+code{font:14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 6px;border-radius:4px}
+.flag{cursor:help}
+.scroll{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;font-size:15px;min-width:100%}
+th,td{padding:8px 12px;border-bottom:1px solid var(--rule);text-align:right;vertical-align:top}
+thead th{font-weight:600;color:var(--muted);border-bottom:2px solid var(--ink)}
+td.ltr{font-family:"Public Sans",Arial,sans-serif;text-align:left;white-space:nowrap}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0}
+.btn{font:600 14px "IBM Plex Sans Arabic",sans-serif;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:7px 14px;cursor:pointer}
+.btn:hover{border-color:var(--muted)}
+.nores{color:var(--muted);display:none}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+details.mtoc{display:none}
+@media (max-width:900px){.wrap{grid-template-columns:1fr}nav.toc{position:static;height:auto;max-height:none;border-inline-end:0;border-bottom:1px solid var(--rule);padding:14px 16px}nav.toc ol{max-height:50vh;overflow-y:auto}nav.toc.closed ol{display:none}nav.toc h2 button{cursor:pointer}nav.toc h2 button span{display:inline}main{padding:24px 16px 70px}section.item{padding:16px 16px 6px}.f-trap,.f-ex{margin-inline:-16px;padding-inline:16px}}
+@media print{nav.toc,.tools{display:none}.wrap{display:block}section.item{break-inside:avoid;border-color:#999}body{font-size:12.5pt}}
+</style></head><body>
+<div class="wrap">
+<nav class="toc" aria-label="الفهرس"><h2><button id="toctoggle" aria-expanded="true">الفهرس <span aria-hidden="true">▾</span></button></h2>
+<input type="search" id="q" placeholder="قلب على مؤشر… (Gallagher، المشاركة…)" aria-label="قلب فالدليل">
+<p class="nores" id="nores">ما لقينا والو.</p>
+<ol id="toc"><li class="np"><a href="#part-1">الجزء 1 · التنقل فالصفحة</a></li><li data-q="tabs التبويبات (2002 … 2021، نظرة شاملة)"><a href="#s1"><b>1</b> التبويبات (2002 … 2021، نظرة شاملة)<small dir="ltr">Tabs</small></a></li><li class="np"><a href="#part-2">الجزء 2 · صفحة «نظرة شاملة»</a></li><li data-q="the chain, from voters to powers السلسلة، من الناخبين حتى للسلطة"><a href="#s2"><b>2</b> السلسلة، من الناخبين حتى للسلطة<small dir="ltr">The chain, from voters to powers</small></a></li><li data-q="largest party الحزب الأول"><a href="#s3"><b>3</b> الحزب الأول<small dir="ltr">Largest party</small></a></li><li data-q="turnout of registered voters المشاركة على المسجلين"><a href="#s4"><b>4</b> المشاركة على المسجلين<small dir="ltr">Turnout of registered voters</small></a></li><li data-q="real turnout (share of adults) المشاركة الحقيقية (من الكبار)"><a href="#s5"><b>5</b> المشاركة الحقيقية (من الكبار)<small dir="ltr">Real turnout (share of adults)</small></a></li><li data-q="registration rate (share of adults) نسبة التسجيل (من الكبار)"><a href="#s6"><b>6</b> نسبة التسجيل (من الكبار)<small dir="ltr">Registration rate (share of adults)</small></a></li><li data-q="winner&#x27;s share of local seats حصة الحزب الأول من المقاعد المحلية"><a href="#s7"><b>7</b> حصة الحزب الأول من المقاعد المحلية<small dir="ltr">Winner&#x27;s share of local seats</small></a></li><li data-q="effective number of parties (votes / seats) العدد الفعلي ديال الأحزاب (الأصوات / المقاعد)"><a href="#s8"><b>8</b> العدد الفعلي ديال الأحزاب (الأصوات / المقاعد)<small dir="ltr">Effective number of parties (votes / seats)</small></a></li><li data-q="gallagher index مؤشر gallagher"><a href="#s9"><b>9</b> مؤشر Gallagher<small dir="ltr">Gallagher index</small></a></li><li data-q="pedersen volatility vs previous election التقلب (pedersen) مقارنة مع الانتخابات اللي قبل"><a href="#s10"><b>10</b> التقلب (Pedersen) مقارنة مع الانتخابات اللي قبل<small dir="ltr">Pedersen volatility vs previous election</small></a></li><li data-q="parties winning seats الأحزاب اللي ربحات مقاعد"><a href="#s11"><b>11</b> الأحزاب اللي ربحات مقاعد<small dir="ltr">Parties winning seats</small></a></li><li data-q="turnout–winner link (ρ) العلاقة بين المشاركة والحزب الأول (ρ) · البصمة"><a href="#s12"><b>12</b> العلاقة بين المشاركة والحزب الأول (ρ) · البصمة<small dir="ltr">Turnout–winner link (ρ)</small></a></li><li data-q="parties needed for a majority الأحزاب اللازمة للأغلبية"><a href="#s13"><b>13</b> الأحزاب اللازمة للأغلبية<small dir="ltr">Parties needed for a majority</small></a></li><li data-q="malapportionment index مؤشر سوء التوزيع (mal %)"><a href="#s14"><b>14</b> مؤشر سوء التوزيع (MAL %)<small dir="ltr">Malapportionment index</small></a></li><li data-q="registered voters المسجلين (والعلامة «est.» / «تقدير»)"><a href="#s15"><b>15</b> المسجلين (والعلامة «est.» / «تقدير»)<small dir="ltr">Registered voters</small></a></li><li data-q="chart one kpi رسم مؤشر واحد"><a href="#s16"><b>16</b> رسم مؤشر واحد<small dir="ltr">Chart one KPI</small></a></li><li data-q="how the parties moved كيفاش تحركو الأحزاب"><a href="#s17"><b>17</b> كيفاش تحركو الأحزاب<small dir="ltr">How the parties moved</small></a></li><li data-q="the five elections in motion الانتخابات الخمسة كتتحرك"><a href="#s18"><b>18</b> الانتخابات الخمسة كتتحرك<small dir="ltr">The five elections in motion</small></a></li><li data-q="where the seats went فين مشاو المقاعد"><a href="#s19"><b>19</b> فين مشاو المقاعد<small dir="ltr">Where the seats went</small></a></li><li data-q="one party across the five elections حزب واحد فالانتخابات الخمسة (البطاقات)"><a href="#s20"><b>20</b> حزب واحد فالانتخابات الخمسة (البطاقات)<small dir="ltr">One party across the five elections</small></a></li><li data-q="party map and province lists الخريطة ديال الحزب واللوائح ديال الأقاليم"><a href="#s21"><b>21</b> الخريطة ديال الحزب واللوائح ديال الأقاليم<small dir="ltr">Party map and province lists</small></a></li><li data-q="same votes, different parliament نفس الأصوات، برلمان مختلف"><a href="#s22"><b>22</b> نفس الأصوات، برلمان مختلف<small dir="ltr">Same votes, different parliament</small></a></li><li data-q="the largest party under every rule الحزب الأول بكل قاعدة (والقواعد الربعة)"><a href="#s23"><b>23</b> الحزب الأول بكل قاعدة (والقواعد الربعة)<small dir="ltr">The largest party under every rule</small></a></li><li data-q="scorecard بطاقة التقييم"><a href="#s24"><b>24</b> بطاقة التقييم<small dir="ltr">Scorecard</small></a></li><li data-q="turnout &gt;80% share الدوائر فيها المشاركة فوق 80%"><a href="#s25"><b>25</b> الدوائر فيها المشاركة فوق 80%<small dir="ltr">Turnout &gt;80% share</small></a></li><li data-q="days from election to government الأيام من الانتخابات حتى للحكومة"><a href="#s26"><b>26</b> الأيام من الانتخابات حتى للحكومة<small dir="ltr">Days from election to government</small></a></li><li data-q="coalition seats مقاعد التحالف، وحصة الحزب الأول من مقاعد التحالف"><a href="#s27"><b>27</b> مقاعد التحالف، وحصة الحزب الأول من مقاعد التحالف<small dir="ltr">Coalition seats</small></a></li><li data-q="winner&#x27;s share of government posts حصة الحزب الأول من الحقائب (والرسم بجوج أعمدة)"><a href="#s28"><b>28</b> حصة الحزب الأول من الحقائب (والرسم بجوج أعمدة)<small dir="ltr">Winner&#x27;s share of government posts</small></a></li><li data-q="gamson ratio مؤشر gamson"><a href="#s29"><b>29</b> مؤشر Gamson<small dir="ltr">Gamson ratio</small></a></li><li data-q="weighted gamson ratio (indicative) مؤشر gamson الموزون (تقريبي)، وأعضاء الحكومة حسب الحزب"><a href="#s30"><b>30</b> مؤشر Gamson الموزون (تقريبي)، وأعضاء الحكومة حسب الحزب<small dir="ltr">Weighted Gamson ratio (indicative)</small></a></li><li data-q="key ministries الوزارات الكبرى / وزارات السيادة (عند ناس بلا انتماء، عند الحزب الأول)"><a href="#s31"><b>31</b> الوزارات الكبرى / وزارات السيادة (عند ناس بلا انتماء، عند الحزب الأول)<small dir="ltr">Key ministries</small></a></li><li data-q="ministers dismissed by the king during the term الوزراء اللي عفا عليهم الملك خلال الولاية، والعلامة «to collect» · «خص يتجمع»"><a href="#s32"><b>32</b> الوزراء اللي عفا عليهم الملك خلال الولاية، والعلامة «to collect» · «خص يتجمع»<small dir="ltr">Ministers dismissed by the King during the term</small></a></li><li data-q="morocco in context المغرب مقارنة مع دول أخرى"><a href="#s33"><b>33</b> المغرب مقارنة مع دول أخرى<small dir="ltr">Morocco in context</small></a></li><li data-q="democracy score (0 to 10) نقطة الديمقراطية (من 0 ل 10)، ونوع النظام"><a href="#s34"><b>34</b> نقطة الديمقراطية (من 0 ل 10)، ونوع النظام<small dir="ltr">Democracy score (0 to 10)</small></a></li><li data-q="reading these numbers كيفاش نقراو هاد الأرقام"><a href="#s35"><b>35</b> كيفاش نقراو هاد الأرقام<small dir="ltr">Reading these numbers</small></a></li><li class="np"><a href="#part-3">الجزء 3 · صفحة ديال عام واحد</a></li><li data-q="header and rule pills العنوان والقاعدة"><a href="#s36"><b>36</b> العنوان والقاعدة<small dir="ltr">Header and rule pills</small></a></li><li data-q="the notes الملاحظات فالإطار الأصفر"><a href="#s37"><b>37</b> الملاحظات فالإطار الأصفر<small dir="ltr">The notes</small></a></li><li data-q="votes and seats الأصوات والمقاعد"><a href="#s38"><b>38</b> الأصوات والمقاعد<small dir="ltr">Votes and seats</small></a></li><li data-q="the parliament: local seats البرلمان: المقاعد المحلية (نص الدائرة)"><a href="#s39"><b>39</b> البرلمان: المقاعد المحلية (نص الدائرة)<small dir="ltr">The parliament: local seats</small></a></li><li data-q="same votes, different rules نفس الأصوات، قواعد مختلفة"><a href="#s40"><b>40</b> نفس الأصوات، قواعد مختلفة<small dir="ltr">Same votes, different rules</small></a></li><li data-q="what if turnout had been different? (controls) واش كان غادي يوقع إلا كانت المشاركة مختلفة؟ (الأزرار)"><a href="#s41"><b>41</b> واش كان غادي يوقع إلا كانت المشاركة مختلفة؟ (الأزرار)<small dir="ltr">What if turnout had been different? (controls)</small></a></li><li data-q="what-if results النتائج ديال المحاكاة"><a href="#s42"><b>42</b> النتائج ديال المحاكاة<small dir="ltr">What-if results</small></a></li><li data-q="the map الخريطة"><a href="#s43"><b>43</b> الخريطة<small dir="ltr">The map</small></a></li><li data-q="median margin for the last seat الفرق الوسيط على آخر مقعد، والدوائر اللي تحسمات بأقل من نقطة"><a href="#s44"><b>44</b> الفرق الوسيط على آخر مقعد، والدوائر اللي تحسمات بأقل من نقطة<small dir="ltr">Median margin for the last seat</small></a></li><li data-q="scatter plot: turnout × leading party&#x27;s share الرسم ديال النقط: المشاركة × حصة الحزب الأول"><a href="#s45"><b>45</b> الرسم ديال النقط: المشاركة × حصة الحزب الأول<small dir="ltr">Scatter plot: turnout × leading party&#x27;s share</small></a></li><li data-q="the constituencies table الجدول ديال الدوائر"><a href="#s46"><b>46</b> الجدول ديال الدوائر<small dir="ltr">The constituencies table</small></a></li><li data-q="constituency detail panel التفاصيل ديال الدائرة"><a href="#s47"><b>47</b> التفاصيل ديال الدائرة<small dir="ltr">Constituency detail panel</small></a></li><li data-q="gap between the most and least populated seat الفرق بين المقعد الأكثر سكانا والأقل"><a href="#s48"><b>48</b> الفرق بين المقعد الأكثر سكانا والأقل<small dir="ltr">Gap between the most and least populated seat</small></a></li><li data-q="inhabitants per local seat عدد السكان لكل مقعد محلي (الرسم)"><a href="#s49"><b>49</b> عدد السكان لكل مقعد محلي (الرسم)<small dir="ltr">Inhabitants per local seat</small></a></li><li data-q="where each party is strong فين كل حزب قوي"><a href="#s50"><b>50</b> فين كل حزب قوي<small dir="ltr">Where each party is strong</small></a></li><li data-q="the government that followed الحكومة اللي جات من بعد"><a href="#s51"><b>51</b> الحكومة اللي جات من بعد<small dir="ltr">The government that followed</small></a></li><li class="np"><a href="#part-4">المعجم · Glossary (EN · دارجة)</a></li></ol></nav>
+<main>
+<h1>دليل القراية ديال المؤشرات · لوحة الانتخابات فالمغرب 2002–2021 (النسخة 3)</h1>
+<div class="lede"><p>هاد الدليل كيشرح كيفاش تقرا كل رقم، كل رسم وكل جدول فاللوحة. ما كيقولش ليك شنو خاصك تفهم من النتائج. الأمثلة كلها بأرقام مفترضة، ماشي أرقام اللوحة.</p><p>الترتيب: الصفحة «نظرة شاملة» هي الأولى، ومن بعد صفحة ديال عام واحد. الخمسة ديال الصفحات ديال السنوات عندهم نفس الشكل.</p><p>ملي مؤشر كيبان فبزاف ديال البلايص، كاين قسم واحد كيشرحو، وفيه سطر «فين كيبان».</p></div>
+<div class="tools"><button class="btn" id="expand">حل كلشي</button><button class="btn" id="collapse">خلي غير العناوين</button><button class="btn" onclick="print()">طبع</button></div>
+<h2 id="part-1">الجزء 1 · التنقل فالصفحة</h2>
+<section class="item" id="s1" data-q="tabs التبويبات (2002 … 2021، نظرة شاملة)"><header><span class="no">1</span><div><h3>التبويبات (2002 … 2021، نظرة شاملة)</h3><p class="en" dir="ltr">Tabs</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>ما كيقيس والو. هو اللي كيخليك تختار شنو تشوف: عام واحد ولا المقارنة بين الخمسة.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>السطر الصغير تحت كل عام مكتوب فيه «{الحزب} الأول · {الحكومة}». الحزب هو اللي عندو أكبر عدد ديال المقاعد المحلية فالحساب ديال اللوحة.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>ما كاينش سلم.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كليكي على عام باش تشوف التفاصيل ديالو. كليكي على «نظرة شاملة» باش تقارن. الأسهم ديال الكلافيي كيدوزوك من تبويب لآخر.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>إلا كان مكتوب «2030 / ح1 الأول · فلان»، كتقراها: ف 2030 الحزب ح1 هو اللي خدا أكبر عدد ديال المقاعد المحلية فالحساب، والحكومة اللي جات من بعد سميتها «فلان».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>«الأول» هنا محسوب على المقاعد المحلية غير. المقاعد ديال اللوائح الوطنية والجهوية ما داخلينش.</li><li>الحساب ديال اللوحة يقدر يختلف على النتيجة الرسمية. شوف القسم 15 والقسم 37.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش أنا فصفحة ديال عام واحد ولا فالمقارنة؟ أشمن عام كنقرا دابا؟</p></div>
+</section>
+<h2 id="part-2">الجزء 2 · صفحة «نظرة شاملة»</h2>
+<section class="item" id="s2" data-q="the chain, from voters to powers السلسلة، من الناخبين حتى للسلطة"><header><span class="no">2</span><div><h3>السلسلة، من الناخبين حتى للسلطة</h3><p class="en" dir="ltr">The chain, from voters to powers</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>السلسلة كترتب خمسة ديال المراحل: الناخبين، الانتخابات، الحزب الأول، رئيس الحكومة، الحكومة. فاللخر كاين جوج خانات: «سلطات الحكومة» و«سلطات الملكية». كل حلقة فيها مؤشر واحد كيقيسها.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>كل حلقة فيها تلاتة ديال الحوايج: السمية ديال المؤشر، القيمة ديالو، وحكم. المؤشرات هوما:</p><pre>الناخبين          → المشاركة الحقيقية (الكبار 18+)، آخر انتخابات      (القسم 5)
+الانتخابات        → مؤشر Gallagher، آخر انتخابات                      (القسم 9)
+الحزب الأول       → شحال من مرة ترأس الحكومة / شحال من مرة تعين الأمين العام ديالو
+رئيس الحكومة     → مؤشر Gamson ديال الحزب الأول                       (القسم 29)
+الحكومة           → وزارات السيادة عند ناس بلا انتماء، من 6             (القسم 31)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>الحكم عندو تلاتة ديال الكلمات: «قوي»، «محدود»، «ضعيف». «قوي» معناها أن صاحب اللوحة كيعتابر أن الصوت كيقرر فهاد الحلقة. «محدود» معناها كيقرر ولكن بحدود. «ضعيف» معناها أن القرار كيتاخد فبلاصة أخرى.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>قراها من الفوق للتحت. كل خانة بإطار هي مرحلة. الخط اللي على الجنب عندو لون على حساب الحكم. تحت الحكم كتلقى السمية ديال المؤشر، ومن بعد القيمة بخط كبير.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>إلا كانت الحلقة «الانتخابات» مكتوب فيها «مؤشر Gallagher: 3.0» والحكم «قوي»، كتقراها: المؤشر عندو 3.0، وصاحب اللوحة عطاه الحكم «قوي» بالقاعدة ديالو.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الأحكام حطهم صاحب اللوحة بقواعد ديالو. ماشي معايير رسمية.</li><li>الحلقة الأولى والتانية فيهم غير آخر انتخابات، ماشي الخمسة.</li><li>الجملة اللي فالإطار تحت السلسلة هي القراية ديال صاحب اللوحة. هاد الدليل ما كيعاودهاش.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن مؤشر مستعمل فكل حلقة؟ واش الحكم مبني على عام واحد ولا على بزاف؟ شنو كان غادي يكون الحكم إلا تبدل المعيار؟</p></div>
+</section>
+<section class="item" id="s3" data-q="largest party الحزب الأول"><header><span class="no">3</span><div><h3>الحزب الأول</h3><p class="en" dir="ltr">Largest party</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>الحزب اللي خدا أكبر عدد ديال المقاعد المحلية فالحساب ديال اللوحة.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>اللوحة كتاخد الأصوات ديال كل دائرة، كتوزع المقاعد بالقاعدة اللي كانت مطبقة ديك العام، وكتجمع.</p><pre>الحزب الأول = الحزب اللي عندو أكبر مجموع ديال المقاعد المحلية</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>ماشي رقم، هي سمية ديال حزب.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>فالجدول «الخمسة ديال الانتخابات جنب بعضيتهم» هو السطر الأول. فصفحة العام هو البطاقة الأولى، وتحتها عدد المقاعد ديالو والحزب التاني.</p></div>
+<div class="f f-where"><h4>فين كيبان</h4><p>التبويبات، العنوان ديال صفحة العام، البطاقة الأولى، الجدول ديال النظرة الشاملة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>إلا ح1 عندو 70 مقعد محلي وح2 عندو 55، الحزب الأول هو ح1 و«التاني ب 55».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>محسوب على المقاعد المحلية غير.</li><li>هو نتيجة ديال محاكاة من الأصوات. يقدر يختلف على العدد الرسمي.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الحزب الأول كيتبدل من عام لعام؟ شحال الفرق بينو وبين التاني؟</p></div>
+</section>
+<section class="item" id="s4" data-q="turnout of registered voters المشاركة على المسجلين"><header><span class="no">4</span><div><h3>المشاركة على المسجلين</h3><p class="en" dir="ltr">Turnout of registered voters</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>من كل 100 واحد مسجل فاللوائح الانتخابية، شحال مشاو صوتو.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>المشاركة على المسجلين = عدد المصوتين ÷ عدد المسجلين</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0% حتى 100%. الرقم الكبير معناه أن عدد كبير من المسجلين مشاو صوتو.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>فصفحة العام هي البطاقة التانية. تحتها مكتوب منين جاو المسجلين: «من TAFRA» ولا «تقديريين». فالنظرة الشاملة هي سطر فالجدول، وتقدر ترسمها ب «رسم مؤشر واحد».</p></div>
+<div class="f f-where"><h4>فين كيبان</h4><p>البطاقة فصفحة العام، الجدول ديال النظرة الشاملة، الخريطة، الجدول ديال الدوائر، «المغرب مقارنة مع دول أخرى».</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>1000 مسجل، 450 صوتو. المشاركة = 450 ÷ 1000 = 45%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>المقام هو المسجلين، ماشي كاع الكبار. اللي ما مسجلش ما محسوبش.</li><li>فشي سنوات عدد المسجلين تقديري. شوف القسم 15.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الرقم كيطلع ولا كيهبط من عام لعام؟ واش المسجلين ديال هاد العام من الملف ولا تقديريين؟</p></div>
+</section>
+<section class="item" id="s5" data-q="real turnout (share of adults) المشاركة الحقيقية (من الكبار)"><header><span class="no">5</span><div><h3>المشاركة الحقيقية (من الكبار)</h3><p class="en" dir="ltr">Real turnout (share of adults)</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>من كل 100 واحد عندو 18 عام ولا كثر، شحال صوتو. كتحسب حتى اللي ما مسجلينش.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>المشاركة الحقيقية = عدد المصوتين ÷ عدد السكان اللي عندهم 18 عام ولا كثر</pre><p>عدد الكبار جاي من الإحصاء ديال HCP. تحت البطاقة مكتوب أشمن إحصاء مستعمل.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0% لفوق. عادة أقل من 100%. الرقم الكبير معناه أن حصة كبيرة من الكبار صوتو.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقة التالتة فصفحة العام. سطر فالجدول ديال النظرة الشاملة. الحلقة الأولى فالسلسلة. سطر «مشروعية» فبطاقة التقييم، والمعيار ديالو 0.5 ولا كثر (اختيار ديال صاحب اللوحة).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>2000 واحد كبير، 1000 مسجل، 450 صوتو. المشاركة على المسجلين = 45%. المشاركة الحقيقية = 450 ÷ 2000 = 22.5%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الإحصاء ماشي ديال نفس العام ديال الانتخابات. إلا السكان زادو من بعد الإحصاء، الرقم كيخرج كبر من الحقيقة.</li><li>فإقليم صغير، الرقم يقدر يفوت 100% إلا كان المسجلين كثر من السكان اللي تحسبو فالإحصاء.</li><li>ما تقارنش هاد الرقم مباشرة مع المشاركة على المسجلين. المقام مختلف.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال الفرق بين هاد الرقم والمشاركة على المسجلين؟ أشمن إحصاء مستعمل فهاد العام؟</p></div>
+</section>
+<section class="item" id="s6" data-q="registration rate (share of adults) نسبة التسجيل (من الكبار)"><header><span class="no">6</span><div><h3>نسبة التسجيل (من الكبار)</h3><p class="en" dir="ltr">Registration rate (share of adults)</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>من كل 100 واحد كبير، شحال مسجلين فاللوائح الانتخابية.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>نسبة التسجيل = عدد المسجلين ÷ عدد السكان اللي عندهم 18 عام ولا كثر</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0% لفوق. الرقم الكبير معناه أن حصة كبيرة من الكبار مسجلين.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>سطر فالجدول ديال النظرة الشاملة. فصفحة العام هي البطاقة «من الكبار مسجلين» فالقسم «الصوت ديال شكون كيوزن أكثر». إلا كان تحتها «تقدير»، المسجلين تقديريين.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>2000 كبير، 1400 مسجل. نسبة التسجيل = 70%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>نفس الفخ ديال الإحصاء: العام ديال الإحصاء ماشي هو العام ديال الانتخابات.</li><li>إلا المسجلين تقديريين، هاد النسبة تقديرية حتى هي.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش هاد النسبة والمشاركة الحقيقية كيتحركو فنفس الاتجاه؟ واش الرقم مبني على مسجلين من الملف ولا على تقدير؟</p></div>
+</section>
+<section class="item" id="s7" data-q="winner&#x27;s share of local seats حصة الحزب الأول من المقاعد المحلية"><header><span class="no">7</span><div><h3>حصة الحزب الأول من المقاعد المحلية</h3><p class="en" dir="ltr">Winner's share of local seats</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال كياخد الحزب الأول من مجموع المقاعد المحلية.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>حصة الحزب الأول = المقاعد المحلية ديال الحزب الأول ÷ مجموع المقاعد المحلية</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0% حتى 100%. فوق 50% معناها أن الحزب الأول عندو الأغلبية ديال المقاعد المحلية بوحدو.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>فالعنوان ديال صفحة العام («… جا الأول ب …%»). سطر فالجدول ديال النظرة الشاملة. سطر «حاسمة» فبطاقة التقييم، والمعيار ديالو 0.4 ولا كثر (اختيار ديال صاحب اللوحة).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>300 مقعد محلي، الحزب الأول عندو 90. الحصة = 30%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هادي حصة من المقاعد المحلية، ماشي من المجلس كامل.</li><li>حصة المقاعد ماشي هي حصة الأصوات. قارنهم فالقسم 38.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الحصة فوق ولا تحت المعيار ديال بطاقة التقييم؟ شحال الفرق بين حصة المقاعد وحصة الأصوات ديال نفس الحزب؟</p></div>
+</section>
+<section class="item" id="s8" data-q="effective number of parties (votes / seats) العدد الفعلي ديال الأحزاب (الأصوات / المقاعد)"><header><span class="no">8</span><div><h3>العدد الفعلي ديال الأحزاب (الأصوات / المقاعد)</h3><p class="en" dir="ltr">Effective number of parties (votes / seats)</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال من حزب «كيوزن» بصح. ماشي عدد الأحزاب المسجلة. حزب صغير بزاف كيتحسب تقريبا بصفر.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>العدد الفعلي = 1 ÷ (مجموع المربعات ديال الحصص)</pre><p>كتاخد الحصة ديال كل حزب (رقم بين 0 و 1)، كتضربها فراسها، كتجمع، وكتقسم 1 على المجموع. كاينين جوج نسخ: وحدة بحصص الأصوات، ووحدة بحصص المقاعد.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>الأقل هو 1 (حزب واحد عندو كلشي). ما كاينش حد أقصى. الرقم الكبير معناه أن الأصوات ولا المقاعد مقسمين على عدد كبير ديال الأحزاب.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>جوج سطور فالجدول ديال النظرة الشاملة. فصفحة العام البطاقة الرابعة فيها نسخة المقاعد، وتحتها عدد الأحزاب اللي ربحو مقاعد. فالجدول ديال الدوائر كاين عمود «الأحزاب الفعلية» لكل دائرة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>جوج أحزاب ب 50% و 50%: 1 ÷ (0.25 + 0.25) = 2. تلاتة ديال الأحزاب ب 60%، 30%، 10%: 1 ÷ (0.36 + 0.09 + 0.01) = 2.17.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>نسخة الأصوات ونسخة المقاعد ماشي بحال بحال. عادة نسخة المقاعد صغر.</li><li>فهاد اللوحة نسخة المقاعد محسوبة على المقاعد المحلية غير.</li><li>إلا كان الملف ديال شي عام ناقص فيه أحزاب، الرقم ديال داك العام كيتأثر.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال الفرق بين نسخة الأصوات ونسخة المقاعد؟ واش الرقم كيتبدل من عام لعام؟ شحال من حزب ربح مقاعد، وشحال هو العدد الفعلي؟</p></div>
+</section>
+<section class="item" id="s9" data-q="gallagher index مؤشر gallagher"><header><span class="no">9</span><div><h3>مؤشر Gallagher</h3><p class="en" dir="ltr">Gallagher index</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال حصص المقاعد بعيدين على حصص الأصوات. هو مؤشر ديال «الفرق بين الأصوات والمقاعد».</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>Gallagher = الجذر المربع ديال ( نص × مجموع (حصة الأصوات − حصة المقاعد)² )</pre><p>الحصص بالنسبة المئوية. الحساب كيتدار على كل الأحزاب.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0 حتى 100. الصفر معناه أن كل حزب عندو نفس الحصة فالأصوات وفالمقاعد. الرقم الكبير معناه أن المقاعد والأصوات بعاد على بعضياتهم.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقة الخامسة فصفحة العام. تحتها مكتوب «5 ولا أقل كيتعتابر منخفض». هادا اختيار ديال صاحب اللوحة. كاين حتى فالجدول ديال النظرة الشاملة، فالسلسلة، فبطاقة التقييم (اختبار «عادلة»)، وف «المغرب مقارنة مع دول أخرى».</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>جوج أحزاب. ح1: 60% أصوات، 70% مقاعد. ح2: 40% أصوات، 30% مقاعد. الفرق هو 10 لكل واحد. Gallagher = الجذر ديال (نص × (100 + 100)) = 10.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الرقم هنا محسوب على المقاعد المحلية غير. الأرقام ديال دول أخرى فالقسم 33 محسوبين على المجلس كامل.</li><li>المؤشر كيقول شحال الفرق، ما كيقولش شكون ربح وشكون خسر منو. لهادشي شوف القسم 38.</li><li>العتبة ديال 5 ماشي قاعدة عالمية.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الرقم فوق ولا تحت المعيار ديال اللوحة؟ واش كيتبدل من عام لعام، وفأشمن اتجاه؟ أشمن أحزاب عندهم أكبر فرق بين الأصوات والمقاعد؟</p></div>
+</section>
+<section class="item" id="s10" data-q="pedersen volatility vs previous election التقلب (pedersen) مقارنة مع الانتخابات اللي قبل"><header><span class="no">10</span><div><h3>التقلب (Pedersen) مقارنة مع الانتخابات اللي قبل</h3><p class="en" dir="ltr">Pedersen volatility vs previous election</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال تبدلو حصص الأصوات ديال الأحزاب بين انتخابات واللي قبلها.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>Pedersen = نص × مجموع | حصة الحزب دابا − حصة الحزب فالانتخابات اللي قبل |</pre><p>الحصص بالنسبة المئوية. الفرق كيتاخد بلا علامة.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0 حتى 100. الصفر معناه أن كل حزب حافظ على نفس الحصة. 100 معناها أن كاع الأصوات مشاو لأحزاب ما كانوش.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>سطر فالجدول ديال النظرة الشاملة. العام الأول ما عندوش قيمة حيت ما كاينش عام قبلو. فبطاقة التقييم هو فاختبار «حرة»، والمعيار 10 ولا كثر (اختيار ديال صاحب اللوحة).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>ح1 داز من 40% ل 30%. ح2 داز من 60% ل 70%. Pedersen = نص × (10 + 10) = 10.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>حزب جديد، حزب تحل، ولا جوج أحزاب تجمعو: هادشي كيطلع الرقم واخا الناخبين ما بدلوش الاختيار ديالهم.</li><li>إلا كان الملف ديال عام ناقص فيه أحزاب، التقلب مع داك العام كيتأثر.</li><li>المؤشر كيقيس التغيير الصافي بين الأحزاب، ماشي شحال من واحد بدل الصوت ديالو.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الرقم فوق ولا تحت المعيار؟ واش الأحزاب هوما هوما فالجوج ديال السنوات؟ واش الملفات ديال الجوج كاملين؟</p></div>
+</section>
+<section class="item" id="s11" data-q="parties winning seats الأحزاب اللي ربحات مقاعد"><header><span class="no">11</span><div><h3>الأحزاب اللي ربحات مقاعد</h3><p class="en" dir="ltr">Parties winning seats</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>عدد الأحزاب اللي خداو على الأقل مقعد محلي واحد.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>العدد = شحال من حزب عندو مقعد محلي واحد ولا كثر</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 1 لفوق. عدد صحيح. الرقم الكبير معناه أن المقاعد مقسمين على عدد كبير ديال الأحزاب.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>سطر فالجدول ديال النظرة الشاملة. تحت البطاقة ديال العدد الفعلي فصفحة العام. فبطاقة التقييم فاختبار «حرة»، والمعيار 5 ولا كثر (اختيار ديال صاحب اللوحة).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>12 حزب ترشحو، 7 خداو مقاعد. الرقم هو 7.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>حزب بمقعد واحد كيتحسب بحال حزب ب 80 مقعد. قارن مع العدد الفعلي فالقسم 8.</li><li>إلا كان الملف ناقص فيه أحزاب، هاد العدد ما يقدرش يفوت عدد الأحزاب اللي فالملف.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال الفرق بين هاد العدد والعدد الفعلي؟ شحال من حزب فالملف ديال هاد العام؟</p></div>
+</section>
+<section class="item" id="s12" data-q="turnout–winner link (ρ) العلاقة بين المشاركة والحزب الأول (ρ) · البصمة"><header><span class="no">12</span><div><h3>العلاقة بين المشاركة والحزب الأول (ρ) · البصمة</h3><p class="en" dir="ltr">Turnout–winner link (ρ)</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>واش الدوائر اللي فيها المشاركة طالعة هي نفسها الدوائر اللي فيها الحزب الأول عندو حصة كبيرة.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>ρ = معامل الارتباط ديال Spearman بين: المشاركة فكل دائرة، وحصة الحزب الأول فنفس الدائرة</pre><p>Spearman كيرتب الدوائر من الصغير للكبير فكل قياس، وكيقارن الترتيبين. <span class="flag" title="خاصها مراجعة">⚠️</span></p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من −1 حتى +1. قريب من +1: الدوائر اللي فيهم المشاركة طالعة هوما اللي فيهم الحزب الأول طالع. قريب من −1: العكس. قريب من 0: ما كاينش ترتيب مشترك.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>فصفحة العام هي البطاقة التالتة فالقسم ديال الدوائر. الجملة اللي تحتها («إلا كانت موجبة بزاف، هادي علامة خطر») هي قاعدة ديال صاحب اللوحة. فبطاقة التقييم هو فاختبار «نزاهة»، والمعيار أقل من 0.3 (اختيار ديال صاحب اللوحة). الرسم ديال النقط (القسم 45) كيوري نفس الحاجة بالعين.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>تلاتة ديال الدوائر. المشاركة: 30%، 50%، 70%. حصة الحزب الأول: 20%، 30%، 40%. الترتيب هو هو فالجوج. ρ = +1.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هادي إشارة إحصائية، ماشي دليل على شي حاجة.</li><li>علاقة موجبة تقدر تجي من أسباب عادية، بحال حزب قوي فمناطق كتصوت بزاف.</li><li>الرقم كيتعلق بالحزب الأول فكل دائرة، وهو ماشي ديما نفس الحزب.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش ρ موجب ولا سالب؟ واش قريب من الصفر ولا بعيد؟ واش النقط فالرسم كيطلعو مع بعضياتهم ولا مفرقين؟</p></div>
+</section>
+<section class="item" id="s13" data-q="parties needed for a majority الأحزاب اللازمة للأغلبية"><header><span class="no">13</span><div><h3>الأحزاب اللازمة للأغلبية</h3><p class="en" dir="ltr">Parties needed for a majority</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>أقل عدد ديال الأحزاب اللي خاصهم يتجمعو باش يوصلو للأغلبية ديال المجلس، إلا بدينا بالكبار.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>1. كنكبرو المقاعد المحلية ديال كل حزب باش المجموع يساوي المقاعد ديال المجلس كامل
+2. كنرتبو الأحزاب من الكبير للصغير
+3. كنجمعو حتى نوصلو للأغلبية (نص المجلس + 1)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 1 لفوق. عدد صحيح. 1 معناها أن الحزب الأول عندو الأغلبية بوحدو. الرقم الكبير معناه أن التحالف خاصو عدد كبير ديال الأحزاب.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقة السادسة فصفحة العام. تحتها مكتوب العدد ديال الأغلبية والعدد ديال المجلس. سطر فالجدول ديال النظرة الشاملة. فبطاقة التقييم فاختبار «حاسمة»، والمعيار 2 ولا أقل (اختيار ديال صاحب اللوحة).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>مجلس ب 100 مقعد، الأغلبية 51. الأحزاب: 30، 25، 20، 15، 10. 30 + 25 = 55. الجواب: 2.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هادا حساب رياضي. ما كيقولش واش هاد الأحزاب كيقدرو ولا كيبغيو يتحالفو.</li><li>المقاعد ديال اللوائح الوطنية ما محسوبينش مباشرة، المقاعد المحلية هي اللي تكبرات.</li><li>التحالف الحقيقي يقدر يكون فيه عدد آخر ديال الأحزاب. شوف القسم 27.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال هي الأغلبية فهاد العام؟ شحال من حزب كان فالتحالف الحقيقي؟</p></div>
+</section>
+<section class="item" id="s14" data-q="malapportionment index مؤشر سوء التوزيع (mal %)"><header><span class="no">14</span><div><h3>مؤشر سوء التوزيع (MAL %)</h3><p class="en" dir="ltr">Malapportionment index</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال التوزيع ديال المقاعد على الأقاليم بعيد على التوزيع ديال السكان.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>MAL = نص × مجموع | حصة الإقليم من المقاعد − حصة الإقليم من السكان | × 100</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0% حتى 100%. الصفر معناه أن كل إقليم عندو مقاعد على قد السكان ديالو. الرقم كيتقرا هكا: «هاد النسبة ديال المقاعد ماشي فين كاينين السكان».</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقة الأولى فالقسم «الصوت ديال شكون كيوزن أكثر». سطر فالجدول ديال النظرة الشاملة. فبطاقة التقييم فاختبار «عادلة»، والمعيار 5 ولا أقل (اختيار ديال صاحب اللوحة).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>جوج أقاليم. الأول: 40% ديال السكان و 50% ديال المقاعد. التاني: 60% ديال السكان و 50% ديال المقاعد. MAL = نص × (10 + 10) = 10%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>السكان جايين من الإحصاء، وهو ماشي ديال نفس العام.</li><li>السنوات اللي كيستعملو نفس الإحصاء ونفس المقاعد كيخرج ليهم نفس الرقم.</li><li>المؤشر محسوب على الإقليم، ماشي على الدائرة.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن إحصاء مستعمل؟ واش الرقم كيتبدل بين السنوات، وعلاش يقدر ما يتبدلش؟ أشمن أقاليم هوما اللي بعاد بزاف؟ (القسم 49)</p></div>
+</section>
+<section class="item" id="s15" data-q="registered voters المسجلين (والعلامة «est.» / «تقدير»)"><header><span class="no">15</span><div><h3>المسجلين (والعلامة «est.» / «تقدير»)</h3><p class="en" dir="ltr">Registered voters</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>عدد الناس المسجلين فاللوائح الانتخابية.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>فشي سنوات العدد كاين فالملف ديال النتائج لكل دائرة. فسنوات أخرى ما كاينش، واللوحة كتقدرو:</p><pre>المسجلين (تقدير) = الأصوات الصحيحة ÷ نسبة المشاركة
+ومن بعد كيتصحح باش المجموع الوطني يساوي الرقم الرسمي</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>عدد ديال الناس. الرقم الكبير معناه مسجلين كثر.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>السطر الأخير فالجدول ديال النظرة الشاملة. إلا كان حداه «est.»، الرقم تقديري. فصفحة العام كاين إطار أصفر كيقولها، وتحت البطاقة ديال المشاركة مكتوب «المسجلين تقديريين».</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>دائرة فيها 9000 صوت صحيح ونسبة المشاركة 45%. التقدير = 9000 ÷ 0.45 = 20000 مسجل، قبل التصحيح.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>التقدير كيفترض أن نسبة الأوراق الملغاة هي هي فكاع الدوائر.</li><li>كاع المؤشرات اللي فيهم المسجلين كيتأثرو: المشاركة، نسبة التسجيل، والمقاعد إلا كان القاسم الانتخابي محسوب على المسجلين.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش هاد العام فيه «تقدير»؟ أشمن مؤشرات فهاد الصفحة كيستعملو المسجلين؟</p></div>
+</section>
+<section class="item" id="s16" data-q="chart one kpi رسم مؤشر واحد"><header><span class="no">16</span><div><h3>رسم مؤشر واحد</h3><p class="en" dir="ltr">Chart one KPI</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>كيرسم مؤشر واحد من الجدول ديال النظرة الشاملة، عمود لكل انتخابات.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>ما كاينش حساب جديد. نفس الأرقام ديال الجدول.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>كيتبدل على حساب المؤشر اللي ختاريتي. المحور كيبدا من 0.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ختار المؤشر من اللائحة. كل عمود أفقي هو عام. اللون هو اللون ديال داك العام فالصفحة كاملة. الرقم مكتوب فآخر العمود. إلا كان مكتوب «n/a»، ما كاينش قيمة لداك العام.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>ختاريتي «مؤشر Gallagher». كتشوف خمسة ديال الأعمدة: 4، 6، 5، 7، 3. العمود الطويل هو ديال العام اللي فيه 7.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>طول العمود كيتقارن غير داخل نفس المؤشر. ما تقارنش عمود ديال نسبة مع عمود ديال عدد.</li><li>السنوات ماشي بنفس البعد فالزمن.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش القيمة كتطلع، كتهبط، ولا كتبقى؟ واش كاين عام مختلف بزاف على الباقي؟ واش داك العام عندو تحفظ فالمعطيات؟</p></div>
+</section>
+<section class="item" id="s17" data-q="how the parties moved كيفاش تحركو الأحزاب"><header><span class="no">17</span><div><h3>كيفاش تحركو الأحزاب</h3><p class="en" dir="ltr">How the parties moved</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>المقاعد المحلية ولا حصة الأصوات ديال كل حزب كبير فكل انتخابات.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>ما كاينش حساب جديد. الأحزاب اللي كيبانو هوما اللي خداو 10 مقاعد ولا كثر شي مرة.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>إلا ختاريتي «المقاعد المحلية»: عدد ديال المقاعد. إلا ختاريتي «حصة الأصوات»: نسبة من 0% حتى 100%.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كل حزب عندو مجموعة ديال الأعمدة، عمود لكل عام. اللون هو العام، والمفتاح تحت الرسم. الرقم مكتوب فآخر كل عمود. اللائحة «ورّي» كتبدل بين المقاعد والأصوات.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>ح1 عندو أعمدة ب 30، 45، 20. كتقراها: 30 مقعد فالعام الأول، 45 فالتاني، 20 فالتالت.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>عدد المقاعد المحلية ماشي هو هو فكاع السنوات. قارن الحصص ماشي غير الأعداد.</li><li>حزب ما كانش موجود فعام كيبان بصفر.</li><li>حصة الأصوات فعام الملف ديالو ناقص محسوبة على الأصوات اللي فالملف غير.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الحزب كيطلع ولا كيهبط؟ واش المقاعد والأصوات ديالو كيتحركو بنفس القدر؟</p></div>
+</section>
+<section class="item" id="s18" data-q="the five elections in motion الانتخابات الخمسة كتتحرك"><header><span class="no">18</span><div><h3>الانتخابات الخمسة كتتحرك</h3><p class="en" dir="ltr">The five elections in motion</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>نفس المقاعد المحلية ديال القسم 17، ولكن بالحركة من عام لعام.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>ما كاينش حساب جديد. الأحزاب الصغار مجموعين ف «أحزاب أخرى».</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>عدد المقاعد المحلية.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ضغط على «شغّل» باش تدوز السنوات بوحدها. ولا كليكي على عام. العام مكتوب بخط كبير. الأعمدة كيترتبو من الكبير للصغير وكيبدلو البلاصة. على الجنب كاين نص دائرة ديال النقط: كل نقطة مقعد (شوف القسم 39).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>ح1 كان فالسطر الأول ب 60، وفالعام اللي موراه نزل للسطر التالت ب 25.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>البلاصة ديال العمود كتبدل، ماشي غير الطول ديالو. تبع اللون والسمية.</li><li>الحركة كتدوز بين جوج سنوات. ما كاينش معطيات بيناتهم.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن حزب بدل الرتبة؟ واش التغيير كبير ولا صغير بين كل جوج سنوات؟</p></div>
+</section>
+<section class="item" id="s19" data-q="where the seats went فين مشاو المقاعد"><header><span class="no">19</span><div><h3>فين مشاو المقاعد</h3><p class="en" dir="ltr">Where the seats went</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال من مقعد حافظ عليه كل حزب بين جوج انتخابات، وشحال من مقعد داز من حزب لآخر.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>فكل دائرة:
+  المقاعد المحفوظة = الأقل بين مقاعد الحزب قبل ومقاعدو من بعد
+  المقاعد اللي خسروها أحزاب كيتوزعو على الأحزاب اللي ربحو، على قد الربح ديال كل واحد
+ومن بعد كيتجمعو كاع الدوائر</pre><p>ملي الدوائر تبدلو بين جوج سنوات، نفس الحساب كيتدار على المجموع الوطني.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>عدد ديال المقاعد. شريط عريض معناه مقاعد كثر.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كل عمود هو عام. كل مستطيل ملون هو حزب، والطول ديالو هو المقاعد. الشريط كيربط حزب فعام مع حزب فالعام اللي موراه. اللون ديال الشريط هو اللون ديال الحزب اللي خرج منو. شريط مستقيم بين نفس اللون هو مقاعد محفوظة. دوز بالماوس على شريط باش تشوف العدد. العلامة «≈» فالتفاصيل معناها أن الحساب وطني وتقريبي.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>فدائرة ب 3 مقاعد. قبل: ح1 عندو 2، ح2 عندو 1. من بعد: ح1 عندو 1، ح2 عندو 1، ح3 عندو 1. المحفوظ: ح1 واحد، ح2 واحد. مقعد واحد داز من ح1 ل ح3.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هادشي كيتبع المقاعد، ماشي الناخبين. ما كيقولش شكون صوت على شكون.</li><li>ملي كيكون كثر من حزب خاسر وكثر من حزب رابح فنفس الدائرة، التوزيع تقريبي، وتقدر تخرج أرقام بالفاصلة.</li><li>الحساب الوطني تقريبي كثر من الحساب دائرة بدائرة.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال من مقعد حافظ عليه كل حزب؟ منين جاو المقاعد الجداد ديال حزب؟ واش هاد الجوج ديال السنوات محسوبين دائرة بدائرة ولا وطنيا؟</p></div>
+</section>
+<section class="item" id="s20" data-q="one party across the five elections حزب واحد فالانتخابات الخمسة (البطاقات)"><header><span class="no">20</span><div><h3>حزب واحد فالانتخابات الخمسة (البطاقات)</h3><p class="en" dir="ltr">One party across the five elections</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>المسار ديال حزب واحد: المقاعد المحلية، الرتبة، حصة الأصوات، وعدد الدوائر اللي جا فيهم الأول.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الرتبة = البلاصة ديال الحزب ملي كنرتبو الأحزاب على المقاعد المحلية
+من الأصوات الصحيحة = أصوات الحزب ÷ مجموع الأصوات
+دوائر جا فيها الأول = عدد الدوائر اللي عندو فيهم أكبر عدد ديال الأصوات</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>المقاعد: عدد. الرتبة: 1 هي الأولى. الحصة: من 0% حتى 100%. الدوائر: من 0 حتى مجموع الدوائر.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ختار الحزب من اللائحة. كتبان بطاقة لكل عام. الرقم الكبير هو المقاعد المحلية. تحتو العام والرتبة. تحتهم حصة الأصوات وعدد الدوائر. إلا كان مكتوب «ما ترشحش»، الحزب ما عندوش أصوات فداك العام.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>بطاقة فيها «40 مقاعد محلية · الرتبة 2 · 18% من الأصوات الصحيحة · 12 دوائر جا فيها الأول».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>«الأول فالدائرة» معناها أكبر عدد ديال الأصوات تما، ماشي أنه خدا كاع المقاعد ديالها.</li><li>الرتبة محسوبة على المقاعد، ماشي على الأصوات.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش المقاعد والحصة كيتحركو مع بعضياتهم؟ واش الرتبة كتبدل؟</p></div>
+</section>
+<section class="item" id="s21" data-q="party map and province lists الخريطة ديال الحزب واللوائح ديال الأقاليم"><header><span class="no">21</span><div><h3>الخريطة ديال الحزب واللوائح ديال الأقاليم</h3><p class="en" dir="ltr">Party map and province lists</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>حصة الحزب المختار من الأصوات فكل إقليم، فالعام المختار. والأقاليم اللي فيهم قوي، واللي ربح ولا خسر فيهم مقارنة مع الانتخابات اللي قبل.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الحصة فالإقليم = أصوات الحزب فالإقليم ÷ مجموع الأصوات فالإقليم
+التغيير = الحصة دابا − الحصة فالانتخابات اللي قبل   (بالنقط)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>الحصة من 0% حتى 100%. التغيير بالنقط: موجب معناه الحصة طلعات، سالب معناه نزلات.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ختار الحزب والانتخابات. الخريطة ملونة بخمسة ديال الدرجات ديال الأزرق. المفتاح تحتها كيعطي الحدود ديال كل درجة. الأقاليم مقسومين خمسة ديال المجموعات بنفس العدد تقريبا. إقليم رمادي معناه أن الحزب ما عندوش أصوات تما. على الجنب: «الأقاليم اللي فيها قوي»، «أكبر ربح» و«أكبر خسارة».</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>فإقليم الحزب عندو 3000 صوت من 20000. الحصة = 15%. فالانتخابات اللي قبل كانت 22%. التغيير = −7 نقطة.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الحدود ديال الألوان كيتبدلو مع كل حزب وكل عام. نفس اللون ماشي نفس القيمة فجوج خرائط.</li><li>إقليم كبير فالمساحة ماشي بالضرورة فيه سكان كثر.</li><li>فالسنوات القدام، الخريطة مرسومة بالأقاليم ديال اليوم، وكل إقليم كياخد الأرقام ديال الإقليم اللي كان تابع ليه.</li><li>هادشي كيوصف بلايص، ماشي أشخاص.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شنو هي الحدود ديال كل لون فهاد الخريطة؟ واش الأقاليم الغامقين مجموعين ولا مفرقين؟ فين تبدلات الحصة بزاف؟</p></div>
+</section>
+<section class="item" id="s22" data-q="same votes, different parliament نفس الأصوات، برلمان مختلف"><header><span class="no">22</span><div><h3>نفس الأصوات، برلمان مختلف</h3><p class="en" dir="ltr">Same votes, different parliament</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>المقاعد اللي كان غادي ياخد كل حزب إلا تحسبو نفس الأصوات بجوج قواعد: قاعدة 2016 وقاعدة 2021.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>قاعدة 2016: العتبة 3%، والقاسم الانتخابي محسوب على أصوات اللوائح اللي فاتو العتبة
+قاعدة 2021: بلا عتبة، والقاسم الانتخابي محسوب على المسجلين
+التغيير = المقاعد بقاعدة 2021 − المقاعد بقاعدة 2016</pre><p>التوزيع كيتدار دائرة بدائرة بطريقة «أكبر بقية». شوف القسم 23.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>المحور الأفقي هو عدد المقاعد المحلية، كيبدا من 0. التغيير موجب معناه مقاعد كثر بقاعدة 2021.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ختار «الأصوات ديال» أشمن عام. كل سطر هو حزب. فيه جوج نقط مربوطين بخط: وحدة للقاعدة ديال 2016 ووحدة للقاعدة ديال 2021 (شوف المفتاح للألوان). الطول ديال الخط هو الفرق. الرقم اللي حدا السطر هو التغيير. كيبانو غير الأحزاب اللي عندهم 3 مقاعد ولا كثر بشي قاعدة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>حزب عندو 80 مقعد بقاعدة 2016 و 65 بقاعدة 2021. الخط كيربط 80 و 65، ومكتوب «−15».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هادي محاكاة. كتفترض أن الناخبين كانو غادي يصوتو بنفس الطريقة تحت قاعدة أخرى.</li><li>ملي المسجلين تقديريين، النتيجة بقاعدة 2021 كتعلق بداك التقدير.</li><li>الجملة اللي فالإطار تحت الرسم مكتوبة أوتوماتيكيا ومعاها قراية ديال صاحب اللوحة. هاد الدليل ما كيعاودهاش.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن أحزاب عندهم خط طويل؟ فأشمن اتجاه؟ واش الاتجاه هو هو ملي كتبدل العام ديال الأصوات؟</p></div>
+</section>
+<section class="item" id="s23" data-q="the largest party under every rule الحزب الأول بكل قاعدة (والقواعد الربعة)"><header><span class="no">23</span><div><h3>الحزب الأول بكل قاعدة (والقواعد الربعة)</h3><p class="en" dir="ltr">The largest party under every rule</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>المقاعد المحلية ديال الحزب الأول ديال كل عام، إلا تحسبو الأصوات ديال داك العام بكل وحدة من ربعة ديال القواعد.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>فكل دائرة:</p><pre>1. العتبة (seuil): اللائحة اللي عندها أقل من العتبة كتخرج
+2. القاسم الانتخابي (quotient électoral) = الأساس ÷ عدد المقاعد ديال الدائرة
+3. كل لائحة كتاخد مقعد على كل قاسم كامل
+4. المقاعد اللي بقاو كيمشيو للوائح اللي عندهم أكبر بقية</pre><p>القواعد الربعة:</p><pre>6% · أصوات اللوائح المؤهلة      الأساس = أصوات اللوائح اللي فاتو 6%
+3% · أصوات اللوائح المؤهلة      الأساس = أصوات اللوائح اللي فاتو 3%
+0% · المسجلين                    الأساس = عدد المسجلين فالدائرة
+0% · الأصوات الصحيحة            الأساس = كاع الأصوات الصحيحة (نسبية خالصة)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>عدد المقاعد المحلية. الرقم بين قوسين هو الفرق مع القاعدة اللي كانت مطبقة داك العام.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كل سطر هو عام وحزبو الأول. كل عمود هو قاعدة. الخانة اللي فيها «in force» / «المطبقة» هي القاعدة الحقيقية ديال داك العام. الخانات الأخرين فيهم العدد والفرق بين قوسين.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>دائرة ب 3 مقاعد و 30000 مسجل. الأصوات: ح1 9000، ح2 4000، ح3 2000. بقاسم على المسجلين: 30000 ÷ 3 = 10000. حتى واحد ما وصل ل 10000. المقاعد كيمشيو للبقايا الكبار: مقعد لكل واحد. بقاسم على الأصوات (15000 ÷ 3 = 5000): ح1 كياخد مقعد كامل، والبقايا هوما 4000، 4000، 2000، والمقاعد اللي بقاو كيمشيو ل ح1 و ح2. النتيجة: ح1 جوج، ح2 واحد.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>محاكاة بنفس الأصوات. ما كتحسبش أن الأحزاب والناخبين كانو غادي يبدلو التصرف ديالهم.</li><li>العتبات ديال شي سنوات قدام مكتوب عليهم «verify» فالـ notebook.</li><li>المقاعد المحلية غير.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن قاعدة كانت مطبقة فهاد العام؟ شحال الفرق بين القواعد؟ واش الفرق فنفس الاتجاه فكاع السنوات؟</p></div>
+</section>
+<section class="item" id="s24" data-q="scorecard بطاقة التقييم"><header><span class="no">24</span><div><h3>بطاقة التقييم</h3><p class="en" dir="ltr">Scorecard</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>كتجمع 9 ديال المؤشرات تحت 5 ديال الاختبارات، وكتقارن كل واحد مع معيار.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>حرة (Free)        الأحزاب اللي ربحات مقاعد ≥ 5      |  التقلب Pedersen ≥ 10
+عادلة (Fair)       مؤشر Gallagher ≤ 5                 |  سوء التوزيع MAL ≤ 5
+نزاهة (Integrity)  البصمة ρ &lt; 0.3                     |  الدوائر فيها المشاركة فوق 80% &lt; 2%
+حاسمة (Decisive)   حصة الحزب الأول من المقاعد ≥ 0.4   |  الأحزاب اللازمة للأغلبية ≤ 2
+مشروعية (Legitimacy) المشاركة الحقيقية ≥ 0.5</pre><p>السؤال ديال كل اختبار: «حرة»: واش كاينة منافسة؟ «عادلة»: واش القواعد والتقسيم محايدين؟ «نزاهة»: واش كاينين إشارات إحصائية غير عادية؟ «حاسمة»: واش الفوز كيعطي القدرة على الحكم؟ «مشروعية»: واش الناس كيشاركو؟</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>كل سطر عندو جواب واحد من تلاتة: ● (القيمة وصلات للمعيار)، ○ (ما وصلاتش)، n/a (ما كايناش قيمة).</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>فصفحة العام: عمود «الاختبار»، «المؤشر»، «المعيار»، القيمة، و«النتيجة». فالنظرة الشاملة: عمود لكل عام، وفكل خانة العلامة والقيمة. قرا السطر كامل: المؤشر، المعيار، ومن بعد العلامة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>المعيار «5 ولا أقل». القيمة 4.2: العلامة ●. القيمة 5.8: العلامة ○.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>المعايير هي اختيارات تحليلية ديال صاحب اللوحة، ماشي قواعد عالمية. هادشي مكتوب تحت الجدول.</li><li>قيمة قريبة بزاف من المعيار تقدر تبدل العلامة بفرق صغير.</li><li>العلامة ما كتقولش شحال القيمة بعيدة على المعيار. شوف الرقم.</li><li>ما تجمعش العلامات باش تخرج بنقطة واحدة. اللوحة ما كتديرش هادشي.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال القيمة بعيدة على المعيار؟ واش العلامة هي هي فكاع السنوات؟ شنو كان غادي يوقع إلا تبدل المعيار شوية؟</p></div>
+</section>
+<section class="item" id="s25" data-q="turnout &gt;80% share الدوائر فيها المشاركة فوق 80%"><header><span class="no">25</span><div><h3>الدوائر فيها المشاركة فوق 80%</h3><p class="en" dir="ltr">Turnout &gt;80% share</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال من الدوائر عندهم مشاركة على المسجلين فوق 80%.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>النسبة = عدد الدوائر اللي فيهم المشاركة &gt; 80% ÷ عدد الدوائر</pre><p>«حالات شاذة» هوما الدوائر اللي المشاركة ديالهم بعيدة على المتوسط بكثر من 2.5 ديال الانحراف المعياري. <span class="flag" title="خاصها مراجعة">⚠️</span></p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0% حتى 100%. الرقم الكبير معناه دوائر كثر بمشاركة طالعة بزاف.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقة الرابعة فالقسم ديال الدوائر. تحتها السميات ديال الحالات الشاذة إلا كانو. فبطاقة التقييم فاختبار «نزاهة»، والمعيار أقل من 2% (اختيار ديال صاحب اللوحة).</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>100 دائرة، 3 منهم عندهم مشاركة فوق 80%. النسبة = 3%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>دائرة صغيرة تقدر يكون فيها مشاركة طالعة لأسباب عادية.</li><li>ملي المسجلين تقديريين، المشاركة ديال كل دائرة جاية من الملف، ولكن العدد ديال المسجلين لا.</li><li>هادي إشارة، ماشي دليل.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن دوائر هوما؟ واش هوما نفسهم فكل عام؟ شحال فيهم ديال المسجلين؟</p></div>
+</section>
+<section class="item" id="s26" data-q="days from election to government الأيام من الانتخابات حتى للحكومة"><header><span class="no">26</span><div><h3>الأيام من الانتخابات حتى للحكومة</h3><p class="en" dir="ltr">Days from election to government</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال من يوم داز بين نهار الانتخابات ونهار تعيين الحكومة.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الأيام = تاريخ تعيين الحكومة − تاريخ الانتخابات</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0 لفوق، بالأيام. الرقم الكبير معناه وقت طويل قبل ما تتشكل الحكومة.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>السطر الأول فالجدول «من بعد الصوت». فصفحة العام البطاقة الأولى فالقسم ديال الحكومة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>الانتخابات نهار 1 مارس، الحكومة نهار 15 أبريل. الرقم = 45 يوم.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>التواريخ مدخلين باليد.</li><li>الرقم كيحسب حتى لتعيين الحكومة كاملة، ماشي لتعيين رئيسها.</li><li>المدة بوحدها ما كتقولش علاش طالت ولا قصرات.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش المدة قريبة بين الحكومات ولا مختلفة؟ أشمن تاريخين مستعملين؟</p></div>
+</section>
+<section class="item" id="s27" data-q="coalition seats مقاعد التحالف، وحصة الحزب الأول من مقاعد التحالف"><header><span class="no">27</span><div><h3>مقاعد التحالف، وحصة الحزب الأول من مقاعد التحالف</h3><p class="en" dir="ltr">Coalition seats</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>مجموع المقاعد ديال الأحزاب اللي فالحكومة. ومن هاد المجموع، شحال عند الحزب الأول.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>حصة الحزب الأول من التحالف = مقاعد الحزب الأول ÷ مقاعد التحالف</pre><p>هنا المقاعد هوما المقاعد الرسميين ديال المجلس كامل، ماشي المحاكاة.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>المقاعد: عدد. الحصة: من 0% حتى 100%. الرقم الكبير معناه أن الحزب الأول عندو وزن كبير داخل التحالف.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>السطر التاني والتالت فالجدول «من بعد الصوت». فصفحة العام البطاقة التانية فالقسم ديال الحكومة، وتحتها الحصة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>التحالف عندو 200 مقعد، الحزب الأول عندو 90 منهم. الحصة = 45%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هاد الأرقام رسميين ومدخلين باليد. الأرقام ديال الأقسام الأخرى محاكاة على المقاعد المحلية. ما تخلطش بيناتهم.</li><li>ملي كيكون مكتوب «خص يتجمع» ولا «—»، الرقم ما متوفرش.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش التحالف عندو كثر من الأغلبية بشوية ولا بزاف؟ شحال الحصة ديال الحزب الأول فيه؟</p></div>
+</section>
+<section class="item" id="s28" data-q="winner&#x27;s share of government posts حصة الحزب الأول من الحقائب (والرسم بجوج أعمدة)"><header><span class="no">28</span><div><h3>حصة الحزب الأول من الحقائب (والرسم بجوج أعمدة)</h3><p class="en" dir="ltr">Winner's share of government posts</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>من كل 100 عضو فالحكومة، شحال من الحزب الأول.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>حصة الحقائب = عدد أعضاء الحكومة من الحزب الأول ÷ عدد أعضاء الحكومة</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0% حتى 100%. الرقم الكبير معناه أن الحزب الأول عندو أعضاء كثر فالحكومة.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>السطر الرابع فالجدول. تحت الجدول كاين رسم: لكل حكومة جوج أعمدة. الأول هو حصة الحزب الأول من مقاعد التحالف. التاني هو حصتو من الحقائب. شوف المفتاح للألوان. قارن الطول ديال الجوج.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>الحكومة فيها 30 عضو، 12 من الحزب الأول. الحصة = 40%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>كل عضو كيتحسب بواحد، وزير كبير ولا كاتب دولة. شوف القسم 30 للنسخة الموزونة.</li><li>حكومة بلا عمود تاني معناها أن العدد «خص يتجمع».</li><li>الجملة اللي فالإطار تحت الرسم هي القراية ديال صاحب اللوحة.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الجوج ديال الأعمدة بنفس الطول؟ أشمن واحد طول؟ واش العدد متوفر لهاد الحكومة؟</p></div>
+</section>
+<section class="item" id="s29" data-q="gamson ratio مؤشر gamson"><header><span class="no">29</span><div><h3>مؤشر Gamson</h3><p class="en" dir="ltr">Gamson ratio</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>واش الحزب الأول خدا حقائب على قد المقاعد ديالو فالتحالف.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>Gamson = حصة الحزب الأول من الحقائب ÷ حصة الحزب الأول من مقاعد التحالف</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0 لفوق. 1 معناها «على قد المقاعد». أقل من 1: الحصة ديالو فالحقائب صغر من الحصة ديالو فالمقاعد. كثر من 1: العكس.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>السطر الخامس فالجدول «من بعد الصوت». البطاقة التالتة فالقسم ديال الحكومة فصفحة العام. الحلقة الرابعة فالسلسلة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>الحزب الأول عندو 50% ديال مقاعد التحالف و 40% ديال الحقائب. Gamson = 0.40 ÷ 0.50 = 0.8.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>كيحسب عدد الحقائب، ماشي الأهمية ديالهم.</li><li>الوزراء بلا انتماء داخلين فالمقام ديال الحقائب، وما داخلينش فمقاعد التحالف.</li><li>إلا كان واحد من الرقمين ناقص، المؤشر كيكون خاوي.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الرقم فوق ولا تحت 1؟ شحال بعيد على 1؟ شحال من وزير بلا انتماء فهاد الحكومة؟</p></div>
+</section>
+<section class="item" id="s30" data-q="weighted gamson ratio (indicative) مؤشر gamson الموزون (تقريبي)، وأعضاء الحكومة حسب الحزب"><header><span class="no">30</span><div><h3>مؤشر Gamson الموزون (تقريبي)، وأعضاء الحكومة حسب الحزب</h3><p class="en" dir="ltr">Weighted Gamson ratio (indicative)</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>نفس الفكرة ديال Gamson، ولكن كل حقيبة عندها وزن على حساب الأهمية.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الأوزان: وزارة سيادة = 3 · وزارة كبيرة = 2 · وزير = 1 · كاتب دولة = 0.5
+Gamson الموزون = حصة الحزب الأول من مجموع الأوزان ÷ حصتو من مقاعد التحالف</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>بحال Gamson: 1 معناها «على قد المقاعد».</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>السطر السادس فالجدول «من بعد الصوت». فصفحة العام مكتوب تحت الرسم «أعضاء الحكومة حسب الحزب». فداك الرسم كل عمود هو حزب، والطول هو عدد الأعضاء. العمود الرمادي هو «بلا انتماء».</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>مجموع الأوزان فالحكومة 40. الحزب الأول عندو 12. الحصة الموزونة = 30%. حصتو من مقاعد التحالف 50%. Gamson الموزون = 0.6.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>اللوحة كتقول أن الترتيب ديال الحقائب (كبيرة، وزير، كاتب دولة) مؤقت. الرقم تقريبي.</li><li>الأوزان اختيار ديال صاحب اللوحة.</li><li>الرسم ما كيبانش للحكومات اللي ما مدخلاش اللائحة ديالهم.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال الفرق بين Gamson العادي والموزون؟ واش اللائحة ديال هاد الحكومة مدخلة؟</p></div>
+</section>
+<section class="item" id="s31" data-q="key ministries الوزارات الكبرى / وزارات السيادة (عند ناس بلا انتماء، عند الحزب الأول)"><header><span class="no">31</span><div><h3>الوزارات الكبرى / وزارات السيادة (عند ناس بلا انتماء، عند الحزب الأول)</h3><p class="en" dir="ltr">Key ministries</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>من 6 ديال الوزارات، شحال عند وزراء بلا انتماء حزبي، وشحال عند الحزب الأول.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>الوزارات الستة هوما: الداخلية، الخارجية، العدل، الأوقاف والشؤون الإسلامية، إدارة الدفاع الوطني، الأمانة العامة للحكومة.</p><pre>عند ناس بلا انتماء = عدد الوزارات (من 6) اللي الوزير ديالها بلا انتماء
+عند الحزب الأول    = عدد الوزارات (من 6) اللي الوزير ديالها من الحزب الأول</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0 حتى 6. الباقي (6 ناقص الجوج) هو الوزارات اللي عند أحزاب أخرى.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>جوج سطور فالجدول «من بعد الصوت». البطاقة الرابعة فالقسم ديال الحكومة. الحلقة الخامسة فالسلسلة. تحت الجدول كاين جدول «الوزارات الكبرى»: كل سطر وزارة، كل عمود حكومة، وفكل خانة سمية الوزير والانتماء ديالو. ● معناها عند حزب. ○ معناها عند وزير بلا انتماء. السطر الأخير هو المجموع.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>من 6: 4 عند ناس بلا انتماء، 1 عند الحزب الأول، 1 عند حزب آخر.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>اللائحة ديال «الوزارات الكبرى» اختيار ديال صاحب اللوحة.</li><li>المعطيات مدخلين باليد. الخانات اللي فيهم «(verify)» باقي خاصهم يتراجعو.</li><li>الجدول كيعطي الوزير ملي تعينات الحكومة. التعديلات اللي من بعد ما داخلينش.</li><li>الفقرة اللي تحت الجدول هي القراية ديال صاحب اللوحة.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال من وزارة عند كل نوع؟ واش نفس السميات كيتعاودو بين الحكومات؟ شحال من خانة فيها «(verify)»؟</p></div>
+</section>
+<section class="item" id="s32" data-q="ministers dismissed by the king during the term الوزراء اللي عفا عليهم الملك خلال الولاية، والعلامة «to collect» · «خص يتجمع»"><header><span class="no">32</span><div><h3>الوزراء اللي عفا عليهم الملك خلال الولاية، والعلامة «to collect» · «خص يتجمع»</h3><p class="en" dir="ltr">Ministers dismissed by the King during the term</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>عدد الوزراء اللي تعفاو بقرار ملكي فالمدة ديال الحكومة.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>عدد مدخل باليد من البلاغات.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0 لفوق. عدد صحيح.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>السطر الأخير فالجدول «من بعد الصوت». «خص يتجمع» معناها أن الرقم باقي ما تدخلش. «—» ولا «n/a» معناها أن الحساب ما ممكنش حيت رقم آخر ناقص.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>حكومة فيها «2»: جوج وزراء تعفاو فالولاية.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>«خص يتجمع» ماشي صفر. ما تقراهاش بحال «0».</li><li>العدد ما كيقولش الأسباب.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الرقم متوفر لهاد الحكومة؟ شنو هو المصدر ديالو؟</p></div>
+</section>
+<section class="item" id="s33" data-q="morocco in context المغرب مقارنة مع دول أخرى"><header><span class="no">33</span><div><h3>المغرب مقارنة مع دول أخرى</h3><p class="en" dir="ltr">Morocco in context</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>نفس المؤشرات لآخر انتخابات وطنية ف 14 دولة أخرى، مع المغرب.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>الأرقام جايين من تلاتة ديال المصادر الخارجية: International IDEA (المشاركة)، مؤشرات Gallagher (الأحزاب والتشويه، على المجلس كامل)، و Economist Intelligence Unit (نقطة الديمقراطية). المؤشرات:</p><pre>المشاركة ديال المسجلين                    (القسم 4)
+المشاركة من كاع الكبار                    (القسم 5)
+العدد الفعلي ديال الأحزاب (المقاعد)        (القسم 8)
+مؤشر Gallagher                           (القسم 9)
+نقطة الديمقراطية                          (القسم 34)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>على حساب المؤشر المختار.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ختار «المؤشر». كل عمود أفقي هو دولة. الدول مجموعين بالجهة، والسمية ديال الجهة مكتوبة بحروف صغار. العمود ديال المغرب بلون آخر. «غير متوفر» معناها أن المصدر ما فيهش الرقم. دوز بالماوس باش تشوف العام ونوع النظام. تحت الرسم كاين «كاع الأرقام (جدول)».</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>ختاريتي «المشاركة من كاع الكبار». دولة أ: 70%. دولة ب: 45%. العمود ديال أ طول.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الأرقام ديال المغرب هنا جايين من المصادر الخارجية. كيختلفو شوية على الأرقام ديال اللوحة (مقاعد محلية غير، إحصاء آخر).</li><li>كل دولة عندها عام مختلف وقانون انتخابي مختلف. شي دول التصويت فيهم إجباري.</li><li>الدول مختارين من طرف صاحب اللوحة: جوج ولا تلاتة لكل جهة.</li><li>التلاتة ديال النقط اللي تحت الرسم هوما القراية ديال صاحب اللوحة. هاد الدليل ما كيعاودهمش.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>فين جا المغرب فهاد المؤشر؟ واش الترتيب كيتبدل ملي كنبدل المؤشر؟ أشمن عام ديال كل دولة؟</p></div>
+</section>
+<section class="item" id="s34" data-q="democracy score (0 to 10) نقطة الديمقراطية (من 0 ل 10)، ونوع النظام"><header><span class="no">34</span><div><h3>نقطة الديمقراطية (من 0 ل 10)، ونوع النظام</h3><p class="en" dir="ltr">Democracy score (0 to 10)</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>نقطة عامة كتعطيها Economist Intelligence Unit لكل دولة.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>المتوسط ديال خمسة ديال المحاور (المسار الانتخابي، عمل الحكومة، المشاركة السياسية، الثقافة السياسية، الحريات). التنقيط كيديروه خبراء المؤسسة. <span class="flag" title="خاصها مراجعة">⚠️</span></p><pre>ديمقراطية كاملة: فوق 8   · ديمقراطية ناقصة: من 6 ل 8
+نظام هجين: من 4 ل 6      · نظام سلطوي: 4 ولا أقل</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 0 حتى 10. الرقم الكبير معناه نقطة عالية عند هاد المؤسسة.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>أول اختيار فاللائحة «المؤشر». نوع النظام كيبان فالتفاصيل ملي كتدوز بالماوس، وفالجدول.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>دولة عندها 6.5: كتدخل فالخانة «ديمقراطية ناقصة».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هادي نقطة ديال مؤسسة وحدة. كاينين مؤشرات أخرى بطرق أخرى.</li><li>السميات ديال الأنواع هوما ديال المؤسسة، ماشي ديال اللوحة.</li><li>اللوحة قرات الأرقام من ويكيبيديا، ماشي من التقرير الأصلي.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شكون اللي عطى هاد النقطة وكيفاش؟ واش الدول اللي عندهم نقطة قريبة عندهم مؤشرات انتخابية قريبة؟</p></div>
+</section>
+<section class="item" id="s35" data-q="reading these numbers كيفاش نقراو هاد الأرقام"><header><span class="no">35</span><div><h3>كيفاش نقراو هاد الأرقام</h3><p class="en" dir="ltr">Reading these numbers</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>ما كيقيس والو. هي لائحة ديال التحفظات على المعطيات.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>خمسة ديال النقط: المقاعد المحلية غير؛ الملف ديال 2002 ناقص؛ المسجلين ديال 2016 و 2021 تقديريين؛ جوج ديال الإحصاءات؛ المعطيات ديال الحكومات مدخلة باليد.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>ما كاينش.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>هو آخر قسم فالنظرة الشاملة. قراه قبل ما تقارن بين السنوات.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>إلا بغيتي تقارن مؤشر فيه المسجلين بين جوج سنوات، شوف أولا واش المسجلين ديال الجوج من نفس النوع (من الملف ولا تقدير).</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>كل تحفظ كيمس مؤشرات معينة، ماشي كلشي.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن تحفظ كيمس المؤشر اللي كنقرا؟ واش كيمس عام واحد ولا بزاف؟</p></div>
+</section>
+<h2 id="part-3">الجزء 3 · صفحة ديال عام واحد</h2>
+<section class="item" id="s36" data-q="header and rule pills العنوان والقاعدة"><header><span class="no">36</span><div><h3>العنوان والقاعدة</h3><p class="en" dir="ltr">Header and rule pills</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>العنوان كيعطي الحزب الأول وحصتو من المقاعد المحلية (القسم 3 والقسم 7). تحتو جوج علامات: القاعدة الانتخابية ديال داك العام، وعدد المقاعد المحلية المحسوبين.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>القاعدة فيها جوج حوايج: العتبة (seuil) والأساس ديال القاسم الانتخابي. الشرح فالقسم 23.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>ما كاينش.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>قرا العلامة ديال القاعدة قبل أي رقم ديال المقاعد. كل رقم ديال المقاعد فهاد الصفحة محسوب بهاد القاعدة، إلا إلا بدلتيها بيدك.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>«القاعدة: عتبة 4%، القاسم على أصوات اللوائح المؤهلة · 300 مقعد محلي محسوبين».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>عدد المقاعد المحلية ماشي هو عدد المقاعد ديال المجلس.</li><li>القاعدة كتبدل من عام لعام.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شنو هي العتبة ديال هاد العام؟ القاسم محسوب على شنو؟</p></div>
+</section>
+<section class="item" id="s37" data-q="the notes الملاحظات فالإطار الأصفر"><header><span class="no">37</span><div><h3>الملاحظات فالإطار الأصفر</h3><p class="en" dir="ltr">The notes</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>ما كيقيس والو. هوما تنبيهات على المعطيات ديال داك العام.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>كاين جوج أنواع. الأول فصفحة 2002: الملف فيه غير تسعة ديال الأحزاب. التاني فالسنوات اللي المسجلين ديالهم تقديريين (القسم 15).</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>ما كاينش.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>الإطار كيبان تحت البطاقات الأولى. قراه قبل الأرقام.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>إلا كان الملف فيه 9 أحزاب من 20، المقاعد ديال 11 حزب كيتوزعو فالحساب على التسعة.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>ملي الملف ناقص، كاع الأرقام ديال المقاعد والحصص فداك العام تقريبيين.</li><li>الحصص محسوبين على الأصوات اللي فالملف غير.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش هاد العام فيه تنبيه؟ أشمن أرقام كيمس؟</p></div>
+</section>
+<section class="item" id="s38" data-q="votes and seats الأصوات والمقاعد"><header><span class="no">38</span><div><h3>الأصوات والمقاعد</h3><p class="en" dir="ltr">Votes and seats</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>لكل حزب: حصتو من الأصوات الصحيحة، وحصتو من المقاعد المحلية.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>حصة الأصوات = أصوات الحزب ÷ مجموع الأصوات
+حصة المقاعد = مقاعد الحزب ÷ مجموع المقاعد المحلية
+الفرق = حصة المقاعد − حصة الأصوات   (بالنقط)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>المحور الأفقي بالنسبة المئوية، كيبدا من 0%. الفرق موجب معناه أن حصة المقاعد كبر من حصة الأصوات.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كل حزب عندو جوج أعمدة فوق بعضياتهم. الرمادي هو حصة الأصوات. الملون هو حصة المقاعد. عدد المقاعد مكتوب فآخر العمود الملون. دوز بالماوس باش تشوف الأصوات، المقاعد، والفرق. الأحزاب مرتبين على المقاعد.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>حزب عندو 30% ديال الأصوات و 40% ديال المقاعد. العمود الملون طول. الفرق = +10 نقط.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>كيبانو غير الأحزاب اللي عندهم مقاعد ولا 2% ديال الأصوات على الأقل.</li><li>المقاعد محسوبين بالمحاكاة، بالقاعدة ديال داك العام.</li><li>حصة الأصوات وطنية، والمقاعد كيتوزعو دائرة بدائرة.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن أحزاب عندهم العمود الملون طول من الرمادي؟ وأشمن العكس؟ شحال الفرق عند الحزب الأول؟</p></div>
+</section>
+<section class="item" id="s39" data-q="the parliament: local seats البرلمان: المقاعد المحلية (نص الدائرة)"><header><span class="no">39</span><div><h3>البرلمان: المقاعد المحلية (نص الدائرة)</h3><p class="en" dir="ltr">The parliament: local seats</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>المقاعد المحلية مرسومين نقطة نقطة، بالقاعدة اللي ختاريتي.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>نفس التوزيع ديال القسم 23. تمانية ديال الأحزاب عندهم لون خاص. الباقي مجموعين ف «أحزاب أخرى» بالرمادي.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>كل نقطة = مقعد واحد. عدد النقط = عدد المقاعد المحلية.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>الأحزاب مرتبين من الكبير للصغير، من اليسار لليمين. فالوسط مكتوب العام، وتحتو الحزب الأول، عدد المقاعد ديالو والحصة. تحت الرسم المفتاح: اللون، السمية، والعدد. اللائحة «القاعدة الانتخابية» كتعاود ترسم المجلس بقاعدة أخرى. القاعدة اللي حداها «المعمول بها» هي الحقيقية.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>300 نقطة. 90 بلون ح1، 75 بلون ح2، والباقي ألوان أخرى.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الترتيب على الحجم. البلاصة فالرسم ما عندها حتى معنى سياسي (يمين، يسار).</li><li>المقاعد المحلية غير.</li><li>ملي كتبدل القاعدة، كتشوف محاكاة، ماشي نتيجة وقعات.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال من لون خاصو يتجمع باش يفوت نص النقط؟ شنو كيتبدل ملي كنبدل القاعدة؟</p></div>
+</section>
+<section class="item" id="s40" data-q="same votes, different rules نفس الأصوات، قواعد مختلفة"><header><span class="no">40</span><div><h3>نفس الأصوات، قواعد مختلفة</h3><p class="en" dir="ltr">Same votes, different rules</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال من مقعد كيربح ولا كيخسر كل حزب إلا تحسبو الأصوات ديال هاد العام بقاعدة أخرى.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>التغيير = المقاعد بالقاعدة المختارة − المقاعد بالقاعدة المطبقة
+المقاعد اللي كيتبدل مولاهم = مجموع التغييرات الموجبة</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>بعدد المقاعد. موجب: الحزب كيربح بالقاعدة المختارة. سالب: كيخسر. مجموع الربح = مجموع الخسارة.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ختار القاعدة من «قارن القاعدة المطبقة مع». الخط العمودي فالوسط هو الصفر. الأعمدة لليمين «كيربح مقاعد». الأعمدة لليسار «كيخسر مقاعد». كيبانو غير الأحزاب اللي تبدل عندهم شي حاجة. الجملة تحت الرسم كتعطي المجموع. «المقاعد بكل قاعدة (جدول)» كيحل جدول فيه القواعد الربعة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>ح1: −8. ح2: +5. ح3: +3. المقاعد اللي تبدل مولاهم: 8.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>محاكاة بنفس الأصوات (شوف القسم 23).</li><li>حزب ما كيبانش فالرسم معناه أن التغيير ديالو صفر، ماشي أنه ما كاينش.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن حزب عندو أطول عمود؟ واش الأحزاب الكبار والصغار كيتحركو فنفس الاتجاه؟ شحال من مقعد تبدل من المجموع؟</p></div>
+</section>
+<section class="item" id="s41" data-q="what if turnout had been different? (controls) واش كان غادي يوقع إلا كانت المشاركة مختلفة؟ (الأزرار)"><header><span class="no">41</span><div><h3>واش كان غادي يوقع إلا كانت المشاركة مختلفة؟ (الأزرار)</h3><p class="en" dir="ltr">What if turnout had been different? (controls)</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>هادي محاكاة. كتبدل المشاركة، كتختار فين، ولاشمن أحزاب، وكتشوف المقاعد كيفاش كيتعاودو يتحسبو.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>فكل دائرة معنية:</p><pre>المشاركة الجديدة = المشاركة الحقيقية + التغيير   (بين 2% و 98%)
+الأصوات الزايدة = المسجلين × التغيير × (الأصوات الصحيحة ÷ المصوتين)
+الأصوات الزايدة كيتقسمو على الأحزاب المختارين، على قد الأصوات اللي عندهم تما</pre><p>ومن بعد المقاعد كيتوزعو بالقاعدة ديال داك العام.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>«التغيير فالمشاركة» من −20 حتى +30 نقطة. موجب: مصوتين كثر. سالب: قل.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>تلاتة ديال الأزرار. «التغيير فالمشاركة»: مؤشر كتجرو. «فين»: فكل بلاصة، الأقاليم الحضرية، ولا القروية (العدد بين قوسين هو عدد الدوائر). «الأحزاب المعنية»: الخانات اللي كتعلم عليهم. إلا ما علمتي على حتى واحد، كاع الأحزاب كياخدو على قد الأصوات ديالهم. «رجّع» كيرجع كلشي للصفر.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>دائرة فيها 10000 مسجل، المشاركة 40%، و 90% ديال الأوراق صحيحين. التغيير +10 نقط. المصوتين الجداد: 1000. الأصوات الصحيحة الزايدة: 900. إلا ختاريتي ح1 و ح2 وعندهم تما 3000 و 1000، ح1 كياخد 675 و ح2 كياخد 225.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>«حضري» معناها إقليم فيه 50% ولا كثر ديال السكان الحضريين فالإحصاء. هادا تصنيف ديال الإقليم كامل.</li><li>عدد المسجلين ما كيتبدلش فالمحاكاة.</li><li>حزب ما عندوش أصوات فدائرة ما كيربح فيها والو.</li><li>هادا سيناريو مفترض، ماشي توقع.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شنو هي الفرضية اللي كنجرب؟ أشمن دوائر معنيين؟ واش الأحزاب اللي ختاريت مترشحين فكاع هاد الدوائر؟</p></div>
+</section>
+<section class="item" id="s42" data-q="what-if results النتائج ديال المحاكاة"><header><span class="no">42</span><div><h3>النتائج ديال المحاكاة</h3><p class="en" dir="ltr">What-if results</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>أربعة ديال الأرقام من بعد التغيير، والمقاعد مقارنة مع النتيجة الحقيقية.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>المشاركة ديال المسجلين = المصوتين الجداد ÷ المسجلين
+المشاركة الحقيقية من الكبار = المصوتين الجداد ÷ الكبار (الإحصاء)
+دوائر تبدلو فيها الأصوات = عدد الدوائر اللي تطبق عليهم التغيير
+التغيير فالمقاعد = المقاعد فالسيناريو − المقاعد الحقيقية</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>بحال الأقسام 4 و 5. التغيير فالمقاعد: موجب ربح، سالب خسارة.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كل بطاقة فيها الرقم الجديد بخط كبير، وتحتو «الحقيقية: …» للمقارنة. تحت البطاقات الرسم ديال الربح والخسارة (بحال القسم 40). تحتو نص الدائرة ديال المجلس فالسيناريو. إلا كان مكتوب «حتى مقعد ما كيتبدل»، التوزيع بقى هو هو.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>المشاركة دازت من 40% ل 46%. دوائر تبدلو فيها الأصوات: 50. ح1: +6 مقاعد. ح2: −4. ح3: −2.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>ملي كاع الأحزاب كياخدو على قد الأصوات ديالهم، الحصص ما كيتبدلوش، والمقاعد قليل فين كيتبدلو. هادا من الحساب نفسو.</li><li>«الحقيقية» هنا هي المحاكاة ديال اللوحة بلا تغيير، ماشي النتيجة الرسمية.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال من نقطة ديال المشاركة خاصها باش يتبدل مقعد واحد؟ واش النتيجة كتبدل ملي كنبدل «فين»؟</p></div>
+</section>
+<section class="item" id="s43" data-q="the map الخريطة"><header><span class="no">43</span><div><h3>الخريطة</h3><p class="en" dir="ltr">The map</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>مؤشر واحد لكل إقليم، من خمسة: الحزب الأول، حصة الحزب الأول من الأصوات، المشاركة ديال المسجلين، المشاركة الحقيقية، السكان لكل مقعد.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>الدوائر ديال كل إقليم كيتجمعو.</p><pre>الحزب الأول فالإقليم = اللي عندو أكبر عدد ديال الأصوات فيه
+السكان لكل مقعد = سكان الإقليم ÷ عدد المقاعد ديالو</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>«الحزب الأول»: لون لكل حزب. الباقي: خمسة ديال الدرجات ديال الأزرق، من القيم الصغار للكبار. المفتاح كيعطي الحدود ديال كل درجة.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>ختار المؤشر من «بيّن». دوز بالماوس على إقليم باش تشوف الأرقام. كليكي عليه باش تحل الدوائر ديالو (القسم 47). فالمفتاح ديال «الحزب الأول»، الرقم حدا كل حزب هو عدد الأقاليم.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>فالمفتاح الدرجة الغامقة مكتوب عليها «60% – 75%». إقليم بهاد اللون عندو قيمة بين 60% و 75%.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>المساحة ماشي هي السكان. إقليم كبير فالخريطة يقدر يكون فيه ناس قلال.</li><li>الحدود ديال الدرجات كيتبدلو مع كل مؤشر وكل عام.</li><li>«الحزب الأول فالإقليم» ما كيقولش بشحال سبق.</li><li>فالسنوات القدام، الحدود هي ديال اليوم (شوف الملاحظة تحت الخريطة).</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شنو هي الحدود ديال كل لون؟ واش الأقاليم بنفس اللون مجموعين؟ واش الصورة كتبدل ملي كنبدل المؤشر؟</p></div>
+</section>
+<section class="item" id="s44" data-q="median margin for the last seat الفرق الوسيط على آخر مقعد، والدوائر اللي تحسمات بأقل من نقطة"><header><span class="no">44</span><div><h3>الفرق الوسيط على آخر مقعد، والدوائر اللي تحسمات بأقل من نقطة</h3><p class="en" dir="ltr">Median margin for the last seat</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>فكل دائرة، شحال كان الفرق بين آخر لائحة خدات مقعد وأحسن لائحة ما خداتش.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الفرق فالدائرة = (أصوات آخر لائحة نجحات − أصوات أحسن لائحة خسرات) ÷ الأصوات الصحيحة × 100
+الفرق الوسيط = القيمة اللي نص الدوائر تحتها ونص فوقها
+النسبة التانية = عدد الدوائر اللي الفرق فيهم أقل من 1 نقطة ÷ عدد الدوائر</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>الفرق بالنقط المئوية. الرقم الصغير معناه أن آخر مقعد تحسم بفرق صغير. النسبة التانية من 0% حتى 100%.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقة الأولى والتانية فالقسم ديال الدوائر. نفس الرقم لكل دائرة كاين فالعمود «الفرق على آخر مقعد» فالجدول.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>دائرة فيها 20000 صوت صحيح. آخر لائحة نجحات عندها 3000، وأحسن خاسرة عندها 2600. الفرق = 400 ÷ 20000 = 2 نقط.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الوسيط ماشي هو المتوسط. ما كيتأثرش بدائرة وحدة فيها فرق كبير بزاف.</li><li>الفرق محسوب على اللوائح بالقاعدة ديال داك العام، ماشي على المرشحين.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش الفرق الوسيط كبير ولا صغير بالنسبة لنقطة وحدة؟ أشمن دوائر عندهم أصغر فرق؟</p></div>
+</section>
+<section class="item" id="s45" data-q="scatter plot: turnout × leading party&#x27;s share الرسم ديال النقط: المشاركة × حصة الحزب الأول"><header><span class="no">45</span><div><h3>الرسم ديال النقط: المشاركة × حصة الحزب الأول</h3><p class="en" dir="ltr">Scatter plot: turnout × leading party's share</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>كل دائرة كتبان بجوج قياسات فنفس الوقت.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>ما كاينش حساب جديد. نفس الأرقام ديال الجدول ديال الدوائر.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>المحور الأفقي: المشاركة على المسجلين. المحور العمودي: حصة الأصوات ديال الحزب الأول فالدائرة. بجوج بالنسبة المئوية.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كل نقطة هي دائرة. الحجم ديال النقطة على حساب عدد المقاعد. اللون هو اللون ديال العام، ما عندوش معنى آخر. دوز بالماوس باش تشوف السمية والأرقام. كليكي باش تحل التفاصيل. الشكل اللي تقلب عليه: واش النقط كيطلعو من اليسار لليمين، كيهبطو، ولا مفرقين بلا اتجاه. وواش كاينين نقط بعاد على الباقي.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>نقطة ف 70% أفقيا و 55% عموديا: دائرة فيها المشاركة 70%، والحزب الأول تما عندو 55% ديال الأصوات.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>المحاور ما كيبداوش من 0. شوف الأرقام اللي عليهم.</li><li>الحزب الأول ماشي نفس الحزب فكاع النقط.</li><li>الجملة تحت الرسم كتقول: «هادي إشارات، ماشي دلائل».</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش النقط عندهم اتجاه؟ شحال من نقطة بعيدة على المجموعة؟ واش النقط الكبار والصغار فنفس البلاصة؟</p></div>
+</section>
+<section class="item" id="s46" data-q="the constituencies table الجدول ديال الدوائر"><header><span class="no">46</span><div><h3>الجدول ديال الدوائر</h3><p class="en" dir="ltr">The constituencies table</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>سطر لكل دائرة، فيه تمانية ديال الأعمدة.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الدائرة · المقاعد · المسجلين · المشاركة (القسم 4) · الحزب الأول (أكبر عدد ديال الأصوات)
+الحصة ديالو · الأحزاب الفعلية (القسم 8، بالأصوات) · الفرق على آخر مقعد (القسم 44)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>على حساب كل عمود.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كتب فالخانة باش تقلب على دائرة، إقليم، ولا حزب. كليكي على عنوان عمود باش ترتب. كليكي مرة أخرى باش تقلب الترتيب. تحت سمية الدائرة مكتوب الإقليم. حدا الخانة مكتوب شحال من دائرة باينة.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>سطر فيه «دائرة س · 4 · 120,000 · 48% · ح1 · 31% · 4.2 · 1.5 نقطة».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>«الحزب الأول» فالدائرة هو اللي عندو أكبر عدد ديال الأصوات، ماشي بالضرورة أكبر عدد ديال المقاعد.</li><li>المسجلين يقدرو يكونو تقديريين.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شنو كيبان ملي كنرتب على المشاركة؟ وعلى الفرق؟ واش نفس الدوائر كيطلعو للفوق؟</p></div>
+</section>
+<section class="item" id="s47" data-q="constituency detail panel التفاصيل ديال الدائرة"><header><span class="no">47</span><div><h3>التفاصيل ديال الدائرة</h3><p class="en" dir="ltr">Constituency detail panel</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>كلشي على دائرة وحدة: المقاعد، المسجلين، المصوتين، المشاركة، الأصوات والمقاعد ديال كل حزب، والمقاعد تما فكل انتخابات.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الحصة = أصوات الحزب فالدائرة ÷ الأصوات الصحيحة فالدائرة
+مقاعد مربوحة = المقاعد بالقاعدة ديال داك العام</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>الحصة من 0% حتى 100%. المقاعد: من 0 حتى عدد المقاعد ديال الدائرة.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كتحل ملي كتكليكي على سطر، نقطة، ولا إقليم. على الجنب كتبان: سطر ديال الأرقام العامة، رسم ديال الحصص، جدول فيه الأصوات، الحصة والمقاعد (كل ● مقعد)، وجدول «المقاعد هنا فكل انتخابات». إلا كليكيتي على إقليم فيه بزاف ديال الدوائر، كل وحدة كتحل بوحدها. «سد» ولا الزر Échap كيسدها.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>ح1: 9000 صوت، 30%، ●● 2. ح2: 6000 صوت، 20%، ● 1.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>كيبانو غير الأحزاب اللي عندهم 1% ولا مقعد.</li><li>الجدول ديال السنوات كيعرض غير السنوات اللي فيهم دائرة بنفس السمية. الحدود ديالها يقدرو يكونو تبدلو.</li><li>«(تقدير)» حدا المسجلين معناها رقم تقديري.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>بشحال من صوت تاخد آخر مقعد؟ واش نفس الأحزاب خداو المقاعد فكل عام؟</p></div>
+</section>
+<section class="item" id="s48" data-q="gap between the most and least populated seat الفرق بين المقعد الأكثر سكانا والأقل"><header><span class="no">48</span><div><h3>الفرق بين المقعد الأكثر سكانا والأقل</h3><p class="en" dir="ltr">Gap between the most and least populated seat</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال من مرة السكان اللي مورا مقعد فالإقليم الأقل تمثيلا كثر من السكان اللي مورا مقعد فالإقليم الأكثر تمثيلا.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>الفرق = أكبر (سكان لكل مقعد) ÷ أصغر (سكان لكل مقعد)</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من 1 لفوق، مكتوب ب «×». 1 معناها أن كاع المقاعد موراهم نفس عدد السكان.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقة التانية فالقسم «الصوت ديال شكون كيوزن أكثر».</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>إقليم فيه 120000 ساكن لكل مقعد، وآخر فيه 30000. الفرق = 4×.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الرقم كيتعلق بجوج أقاليم غير: الأكبر والأصغر. إقليم واحد صغير بزاف كيطلعو بزاف.</li><li>ما كيقولش شنو واقع فالأقاليم الأخرين. لهادشي شوف القسم 14 والقسم 49.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن جوج أقاليم هوما اللي كيحددو هاد الرقم؟ شحال فيهم ديال السكان؟</p></div>
+</section>
+<section class="item" id="s49" data-q="inhabitants per local seat عدد السكان لكل مقعد محلي (الرسم)"><header><span class="no">49</span><div><h3>عدد السكان لكل مقعد محلي (الرسم)</h3><p class="en" dir="ltr">Inhabitants per local seat</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>شحال من ساكن كاين مورا كل مقعد، فستة ديال الأقاليم الأقل تمثيلا وستة الأكثر تمثيلا.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>السكان لكل مقعد = سكان الإقليم (الإحصاء) ÷ عدد المقاعد المحلية ديالو</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>عدد ديال السكان. الرقم الصغير معناه أن كل صوت كيوزن كثر فداك الإقليم.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>12 عمود أفقي. الستة الأولين بالرمادي هوما «الأقل تمثيلا» (سكان كثر لكل مقعد). الستة التاليين بلون العام هوما «الأكثر تمثيلا». الرقم مكتوب فآخر كل عمود. دوز بالماوس باش تشوف السكان، المقاعد، ونسبة التمدن.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>إقليم فيه 400000 ساكن و 4 مقاعد: 100000 لكل مقعد. إقليم فيه 40000 ساكن و 2 مقاعد: 20000 لكل مقعد.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>كيبانو غير 12 إقليم. الباقي فالوسط وما مرسومينش.</li><li>السكان من الإحصاء، ماشي من العام ديال الانتخابات.</li><li>«السكان» كاع السكان، ماشي الكبار ولا المسجلين.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>شحال الفرق بين أول عمود وآخر عمود؟ واش الأقاليم اللي فالرسم عندهم شي حاجة مشتركة (الحجم، البلاصة)؟</p></div>
+</section>
+<section class="item" id="s50" data-q="where each party is strong فين كل حزب قوي"><header><span class="no">50</span><div><h3>فين كل حزب قوي</h3><p class="en" dir="ltr">Where each party is strong</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>واش حصة الحزب من الأصوات كتطلع ولا كتهبط مع تلاتة ديال المؤشرات ديال الإحصاء: التمدن، الأمية، البطالة. الحساب كيتدار على الأقاليم.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><pre>لكل حزب ولكل مؤشر: معامل الارتباط ديال Spearman بين
+  حصة الحزب فكل إقليم   و   قيمة المؤشر فنفس الإقليم</pre></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>من −1 حتى +1. موجب: الحزب عندو حصة كبر فالأقاليم اللي المؤشر فيهم طالع. سالب: العكس. قريب من 0: ما كاينش ترتيب مشترك.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>كل سطر حزب، كل عمود مؤشر. اللون ديال الخانة على حساب العلامة (موجب ولا سالب)، وكيغماق ملي الرقم كيبعد على الصفر. كيبانو الأحزاب اللي عندهم 5 مقاعد ولا كثر.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>حزب عندو «+0.60» تحت «التمدن»: الأقاليم اللي فيهم تمدن كثر هوما اللي عندو فيهم حصة كبر، فالترتيب.</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>هادشي كيوصف بلايص، ماشي أشخاص. رقم موجب مع الأمية ما كيعنيش أن الناس الأميين صوتو على داك الحزب.</li><li>الارتباط ماشي سبب.</li><li>فالإحصاء القديم، «البطالة» رقم تقريبي (اللي كيقلبو على أول خدمة).</li><li>التلاتة ديال المؤشرات مرتبطين بيناتهم: التمدن والأمية كيمشيو عكس بعضياتهم فبزاف ديال الأقاليم.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>واش العلامة موجبة ولا سالبة؟ شحال الرقم بعيد على الصفر؟ واش العلامة ديال نفس الحزب كتبقى هي هي بين السنوات؟</p></div>
+</section>
+<section class="item" id="s51" data-q="the government that followed الحكومة اللي جات من بعد"><header><span class="no">51</span><div><h3>الحكومة اللي جات من بعد</h3><p class="en" dir="ltr">The government that followed</p></div></header>
+<div class="f f-what"><h4>شنو كيقيس</h4><p>أربعة ديال البطاقات على الحكومة اللي تشكلات من بعد داك العام، ورسم ديال الأعضاء حسب الحزب.</p></div>
+<div class="f f-calc"><h4>كيفاش كيتحسب</h4><p>نفس المؤشرات ديال الأقسام 26، 27، 29، 31 و 30.</p></div>
+<div class="f f-scale"><h4>السلم والاتجاه</h4><p>شوف كل قسم.</p></div>
+<div class="f f-read"><h4>كيفاش تقراه فالصفحة</h4><p>البطاقات بالترتيب: الأيام من الانتخابات حتى للحكومة؛ مقاعد التحالف من مجموع المجلس، وتحتها الحصة ديال الحزب الأول؛ مؤشر Gamson؛ وزارات السيادة عند ناس بلا انتماء، وتحتها شحال عند الحزب الأول. «—» ولا «خص يتجمع» معناها رقم ناقص.</p></div>
+<div class="f f-ex"><h4>مثال بأرقام مفترضة</h4><p>«45 يوم · 200 مقعد من 400، الحزب الأول عندو 45% منهم · Gamson 0.8 · 4 من 6».</p></div>
+<div class="f f-trap"><h4>الفخاخ</h4><ul><li>الأرقام ديال الحكومة رسميين ومدخلين باليد. الأرقام ديال باقي الصفحة محاكاة.</li><li>«الحزب الأول» ديال الحكومة هو الرسمي. يقدر يختلف على «الحزب الأول» فالمحاكاة ملي الملف ناقص.</li></ul></div>
+<div class="f f-ask"><h4>أسئلة طرحها على راسك</h4><p>أشمن بطاقات فيهم رقم وأشمن فيهم «خص يتجمع»؟ واش الحزب الأول هنا هو نفسو اللي فالعنوان ديال الصفحة؟</p></div>
+</section>
+<h2 id="part-4">المعجم · Glossary (EN · دارجة)</h2>
+<div class="scroll"><table><thead><tr><th>English</th><th>دارجة</th><th>شرح قصير</th></tr></thead><tbody><tr><td dir="ltr" class="ltr">Registered voters</td><td>المسجلين</td><td>الناس اللي مسجلين فاللوائح الانتخابية</td></tr><tr><td dir="ltr" class="ltr">Voters</td><td>المصوتين</td><td>اللي مشاو صوتو، حتى اللي الورقة ديالهم ملغاة</td></tr><tr><td dir="ltr" class="ltr">Valid votes</td><td>الأصوات الصحيحة</td><td>الأصوات اللي تحسبو للوائح</td></tr><tr><td dir="ltr" class="ltr">Spoiled ballots</td><td>الأوراق الملغاة</td><td>الأوراق البيضاء ولا اللي ما مقبولينش</td></tr><tr><td dir="ltr" class="ltr">Turnout</td><td>المشاركة</td><td>المصوتين مقسومين على المسجلين ولا على الكبار</td></tr><tr><td dir="ltr" class="ltr">Adults (18+)</td><td>الكبار</td><td>السكان اللي عندهم 18 عام ولا كثر، من الإحصاء</td></tr><tr><td dir="ltr" class="ltr">Constituency</td><td>الدائرة</td><td>المنطقة اللي كيتنتاخبو فيها عدد ديال النواب</td></tr><tr><td dir="ltr" class="ltr">Province / prefecture</td><td>الإقليم / العمالة</td><td>التقسيم الإداري اللي فيه دائرة ولا كثر</td></tr><tr><td dir="ltr" class="ltr">Local seats</td><td>المقاعد المحلية</td><td>المقاعد ديال الدوائر، بلا اللوائح الوطنية والجهوية</td></tr><tr><td dir="ltr" class="ltr">Threshold (seuil)</td><td>العتبة</td><td>أقل نسبة ديال الأصوات باش لائحة تدخل فالتوزيع</td></tr><tr><td dir="ltr" class="ltr">Electoral quotient (quotient électoral)</td><td>القاسم الانتخابي</td><td>العدد اللي خاص لائحة توصلو باش تاخد مقعد كامل</td></tr><tr><td dir="ltr" class="ltr">Largest remainder</td><td>أكبر بقية</td><td>الطريقة اللي كتوزع المقاعد اللي بقاو</td></tr><tr><td dir="ltr" class="ltr">Eligible lists</td><td>اللوائح المؤهلة</td><td>اللوائح اللي فاتو العتبة</td></tr><tr><td dir="ltr" class="ltr">Effective number of parties</td><td>العدد الفعلي ديال الأحزاب</td><td>عدد الأحزاب محسوب بالوزن ديالهم</td></tr><tr><td dir="ltr" class="ltr">Gallagher index</td><td>مؤشر Gallagher</td><td>الفرق بين حصص الأصوات وحصص المقاعد</td></tr><tr><td dir="ltr" class="ltr">Pedersen volatility</td><td>التقلب (Pedersen)</td><td>شحال تبدلو حصص الأحزاب بين جوج انتخابات</td></tr><tr><td dir="ltr" class="ltr">Malapportionment</td><td>سوء التوزيع</td><td>الفرق بين توزيع المقاعد وتوزيع السكان</td></tr><tr><td dir="ltr" class="ltr">Correlation (Spearman, ρ)</td><td>الارتباط (Spearman)</td><td>واش جوج قياسات كيترتبو بنفس الطريقة</td></tr><tr><td dir="ltr" class="ltr">Median</td><td>الوسيط</td><td>القيمة اللي نص الحالات تحتها ونص فوقها</td></tr><tr><td dir="ltr" class="ltr">Coalition</td><td>التحالف</td><td>الأحزاب اللي فالحكومة</td></tr><tr><td dir="ltr" class="ltr">Portfolio / post</td><td>الحقيبة</td><td>منصب فالحكومة</td></tr><tr><td dir="ltr" class="ltr">Gamson ratio</td><td>مؤشر Gamson</td><td>حصة الحقائب مقسومة على حصة المقاعد فالتحالف</td></tr><tr><td dir="ltr" class="ltr">Sovereignty / key ministries</td><td>وزارات السيادة / الوزارات الكبرى</td><td>الستة ديال الوزارات اللي ختارتهم اللوحة</td></tr><tr><td dir="ltr" class="ltr">Non-partisan</td><td>بلا انتماء</td><td>وزير ما عندوش انتماء حزبي</td></tr><tr><td dir="ltr" class="ltr">Benchmark</td><td>المعيار</td><td>الحد اللي كتقارن معاه اللوحة، اختيار تحليلي</td></tr><tr><td dir="ltr" class="ltr">Simulation</td><td>المحاكاة</td><td>حساب من الأصوات بقاعدة معينة، ماشي نتيجة رسمية</td></tr><tr><td dir="ltr" class="ltr">Estimate</td><td>تقدير</td><td>رقم محسوب حيت الرقم الحقيقي ما متوفرش</td></tr><tr><td dir="ltr" class="ltr">Census</td><td>الإحصاء</td><td>الإحصاء العام ديال السكان (HCP)</td></tr><tr><td dir="ltr" class="ltr">to collect</td><td>خص يتجمع</td><td>رقم باقي ما تدخلش</td></tr><tr><td dir="ltr" class="ltr">n/a</td><td>غير متوفر</td><td>ما كايناش قيمة</td></tr></tbody></table></div>
+</main></div>
+<script>
+const q=document.getElementById("q"), items=[...document.querySelectorAll("section.item")], lis=[...document.querySelectorAll("#toc li[data-q]")];
+q.addEventListener("input",()=>{const v=q.value.trim().toLowerCase(); let n=0;
+  items.forEach(s=>{const ok=!v||s.dataset.q.includes(v)||s.textContent.toLowerCase().includes(v); s.hidden=!ok; n+=ok;});
+  lis.forEach(l=>{const s=document.querySelector(l.querySelector("a").getAttribute("href")); l.hidden=s.hidden;});
+  document.getElementById("nores").style.display=n?"none":"block";});
+const setAll=open=>items.forEach(s=>s.querySelectorAll(".f").forEach(f=>f.hidden=!open));
+document.getElementById("expand").onclick=()=>setAll(true);
+document.getElementById("collapse").onclick=()=>setAll(false);
+document.addEventListener("click",e=>{const h=e.target.closest("section.item>header"); if(!h) return; const fs=h.parentElement.querySelectorAll(".f"), open=[...fs].some(f=>f.hidden); fs.forEach(f=>f.hidden=!open);});
+const tocNav=document.querySelector("nav.toc"), tt=document.getElementById("toctoggle");
+const setToc=open=>{tocNav.classList.toggle("closed",!open); tt.setAttribute("aria-expanded",open);};
+if(innerWidth<=900) setToc(false);
+tt.onclick=()=>{ if(innerWidth<=900) setToc(tocNav.classList.contains("closed")); };
+q.addEventListener("focus",()=>{ if(innerWidth<=900) setToc(true); });
+document.getElementById("toc").addEventListener("click",e=>{ if(e.target.closest("a")&&innerWidth<=900) setToc(false); });
+const links=new Map([...document.querySelectorAll("#toc a")].map(a=>[a.getAttribute("href").slice(1),a]));
+if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.remove("on")); const a=links.get(e.target.id); if(a){a.classList.add("on"); if(innerWidth>900) a.scrollIntoView({block:"nearest"});}}}),{rootMargin:"-10% 0px -75% 0px"}); items.forEach(s=>io.observe(s));}
+</script></body></html>
